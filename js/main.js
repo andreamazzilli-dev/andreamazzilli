@@ -1,6 +1,7 @@
-/*
-async function getData() {
-    const url = "test.txt";
+
+async function getData(item) {
+    let main = document.querySelector("#main");
+    const url = "data/"+item+".html";
     try {
       const response = await fetch(url);
       if (!response.ok) {
@@ -10,16 +11,18 @@ async function getData() {
       const data = await response.data();
       console.log(data);
 
-      console.log('second fetch');
-      document.querySelector("main").append(data);
+      console.log('async fetch');
+      main.innerHTML = data1
+
+      toggleDrawer();
 
     } catch (error) {
       console.error(error.message);
     }
   }
-*/
 
-function load (item){
+
+function load(item){
     console.log(item);
     let main = document.querySelector("#main");
 
