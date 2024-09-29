@@ -8,11 +8,11 @@ async function getData(item) {
         throw new Error(`Response status: ${response.status}`);
       }
   
-      const data = await response.data();
+      const data = await response.text();
       console.log(data);
 
       console.log('async fetch');
-      main.innerHTML = data1
+      main.innerHTML = data
 
       toggleDrawer();
 
