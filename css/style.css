@@ -17,61 +17,7 @@ header {
 
 .logo {
   width: 20vw;
-  animation: logoTopToHome linear 2.5s;
-  animation-fill-mode: forwards;
 }
-
-.logoHome {
-  width: 50vw;
-  margin: 35vh auto 0 auto;
-  animation: logoHomeToTop linear 2.5s;
-  animation-fill-mode: forwards;
-}
-span.logoHomeText {
-  font-family: "Comfortaa";
-  font-size: 43px;
-  font-size: 9vw;
-  color: #ffffff;
-  opacity: 0;
-  animation: opacityZeroToOne linear 3s;
-  animation-fill-mode: forwards;
-}
-@keyframes logoTopToHome {
-  from {
-    width: 20vw;
-  }
-  to {
-    width: 70vw;
-    margin: 35vh auto 0 auto;
-  }
-}
-
-@keyframes logoHomeToTop {
-  from {
-    width: 50vw;
-    margin: 35vh auto;
-  }
-  to {
-    width: 20vw;
-    margin: unset;
-  }
-}
-
-@keyframes opacityZeroToOne {
-  0% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 0;
-  }
-  95% {
-    opacity: 0.50;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 
 .openBtn {
   filter: invert();
