@@ -29,7 +29,7 @@ function load (item){
         .then((data1) => {
             console.log('first fetch');
             console.log(data1);
-            main.innerHTML += data1
+            main.innerHTML = data1
             })
       
       //console.log('second fetch outside');
