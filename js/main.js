@@ -7,13 +7,10 @@ async function getData(item) {
       if (!response.ok) {
         throw new Error(`Response status: ${response.status}`);
       }
-  
+
       const data = await response.text();
-      console.log(data);
-
-      console.log('async fetch');
+      //console.log(data);
       main.innerHTML = data
-
       toggleDrawer();
 
     } catch (error) {
@@ -23,26 +20,18 @@ async function getData(item) {
 
 
 function load(item){
-    console.log(item);
     let main = document.querySelector("#main");
 
-    //fetch('test.html')
     fetch('data/'+item+'.html')
         .then(response => response.text())
         .then((data1) => {
-            console.log('first fetch');
-            console.log(data1);
+            //console.log(data1);
             main.innerHTML = data1
             })
-      
-      //console.log('second fetch outside');
-      //console.log(data);
-      //document.querySelector("main").append(data)
       toggleDrawer();
 }
 
 
-    //let navItemProgetti = document.querySelector('#progetti'); //Nav Layer
     let navItemProgetti = document.getElementsByName('progetti'); //Nav Layer
     document.querySelector('progetti').addEventListener('click', ()=>{
         alert(navItemProgetti);
