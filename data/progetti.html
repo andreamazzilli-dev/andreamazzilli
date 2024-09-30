@@ -74,8 +74,16 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+        opacity: 0;
     }
-    .project > div {
+    .projectVisible {
+        opacity: 1;
+        animation: fadeIn linear 2s;
+        animation-fill-mode: forwards;
+    }
+    .project > .card {
         background-color: rgba(255,255,255,1);
         width: 300px;
         height: 350px;
@@ -85,23 +93,54 @@
         transition: all 0.3s ease-in-out;
         padding: 30px;
         margin: 0 auto;
+
+        height: calc(350px / 2);
+        height: 130px;
+        width: 330px; /*alternative widht */
+        overflow: hidden;
     }
-    .project > div:hover {
+    .project > .card:hover {
         transform: scale(1.2);
         transition: all 1s ease-in-out;
+        height: 350px;
     }
-    .project > div > .preview {
+    .project > .card > .preview {
         border: 1px solid green;
+        height: 50%;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        /*padding-bottom: 15px;*/
+        margin: -30px;
+        min-height: calc(350px / 2);
     }
-    .project > div > .content {
+    .project > .card > .content {
         border: 1px solid red;
+        height: 50%;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 30px;
     }
+
+    @keyframes fadeIn {
+    from {
+      opacity: 0;
+      display: none;
+      /*width: 0px;*/
+    }
+    to {
+      opacity: 1;
+      display: unset;
+      /*width: 100%;*/
+    }
+  }
 </style>
 
-<div class="project">
+<div class="project" id="project">
     <!--<h2 class="sectionTitle projectBg">Progetti</h2>-->
     
-    <div>
+    <div class="card">
         <div class="preview">
             <a class="" href="http://dnaver.andrewm.net"><img src="data/progetti/dnaver.png" alt="dnaver"></a>
         </div>
@@ -109,7 +148,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quia dolor enim nulla delectus iusto consectetur sequi ex debitis a, laboriosam molestiae facere provident quo temporibus molestias ad dignissimos officia.
         </div>
     </div>
-    <div>
+    <div class="card">
         <div class="preview">
             <a class="" href="http://www.napolipassion.it"><img src="data/progetti/napolipassion.png" alt="NapoliPassion"></a>
         </div>
@@ -118,7 +157,7 @@
         </div>
         <a href="#">Vai al sito</a>
     </div>
-    <div>
+    <div class="card">
         <div class="preview">
             <a class="" href="http://mateselug.wordpress.com"><img src="data/progetti/matselug.png" alt="MateseLUG"></a>
         </div>
