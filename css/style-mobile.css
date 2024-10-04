@@ -1,0 +1,86 @@
+header {
+    text-align: center;
+    display: inline-block;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+.logoGroup {
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    font-size: 100%;
+    & .logo {
+      width: 20vw;
+      /*display: none;*/
+    }
+    & .logoTextLabel {
+      background-color: #cadee5;
+      color: #006182 !important;
+      border-radius: 10px;
+      padding: 5px;
+    }
+    .logoText {
+      font-family: "Comfortaa";
+      font-size: 3em;
+      font-weight: 500;
+      color: #cadee5;
+      display: none;
+    }
+    .logoTextBig {
+      font-size: 10em;
+    }
+    .logoTextOriginal {
+      font-size: 15em;
+    }
+    .logoSeparator {
+      font-family: "Comfortaa";
+      font-weight: 500;
+      color: #cadee5;
+      font-size: 3em;
+      padding: 5px;
+      display: none;
+    }
+    .logoHomeText {
+      /*display: none;*/
+      font-family: "Comfortaa";
+      font-size: 3em;
+      font-size: 2em;
+      font-weight: 500;
+      color: #cadee5;
+      padding: 5px;
+    }
+}
+
+.spacer {
+    flex: 0;
+    display: none;
+}
+
+img.hamburger {
+    filter: invert();
+}
+#nav-ics {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10vw;
+    height: 10vw;
+}
+
+nav {
+    background-color: #0062827c !important;
+    background-color: rgba(0,98,130,0.9) !important;
+    ul,hr {
+        display: none;
+    }
+    a {
+        font-family: "Raleway";
+        text-transform: lowercase;
+        font-weight: bold;
+        font-size: 2.5em;
+    }
+    a:hover {
+        background-color: #cadee5;
+        color: #006182;
+    }
+}

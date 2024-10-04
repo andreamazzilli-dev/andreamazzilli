@@ -1,27 +1,5 @@
 @import "../css/home-logo-experiment.css" screen;
-@font-face {
-  font-family: "Comfortaa";
-  src: url("../fonts/Comfortaa.ttf");
-}
-@font-face {
-  font-family: "Raleway";
-  src: url("../fonts/Raleway.ttf");
-}
-@font-face {
-  font-family: "JosefinSans";
-  src: url("../fonts/JosefinSans.ttf");
-}
 
-
-html, body {
-    margin: 0;
-  }
-  
-body {
-  background-color: #006182;
-  font-family: sans-serif;
-  font-weight: 300;
-}
 
 header {
   margin: 3% auto !important;
@@ -47,6 +25,7 @@ header {
     color: #006182 !important;
     border-radius: 10px;
     padding: 5px;
+    align-content: center;
   }
   .logoText {
     font-family: "Comfortaa";
@@ -66,6 +45,7 @@ header {
     color: #cadee5;
     font-size: 3em;
     padding: 5px;
+    align-content: center;
   }
   .logoHomeText {
     /*display: none;*/
