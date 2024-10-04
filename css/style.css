@@ -1,0 +1,2 @@
+@import url('style-desktop.css') screen and (min-width: 768px) and (orientation: landscape);
+@import url('style-mobile.css') screen and (max-width: 768px) and (orientation: portrait);
