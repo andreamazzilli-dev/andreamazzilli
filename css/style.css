@@ -1,3 +1,18 @@
+@import "../css/home-logo-experiment.css" screen;
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/Comfortaa.ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway.ttf");
+}
+@font-face {
+  font-family: "JosefinSans";
+  src: url("../fonts/JosefinSans.ttf");
+}
+
+
 html, body {
     margin: 0;
   }
@@ -13,10 +28,54 @@ header {
   margin: 3vh auto !important;
   margin: 4vh auto !important;
   text-align: center;
+  /*border: 1px solid red;*/
+  display: flex;
+  padding-left: 6vw;
+  padding-right: 6vw;
 }
 
-.logo {
-  width: 20vw;
+.logoGroup {
+  display: flex;
+  padding: 15px;
+  width: 40vw;
+  & .logo {
+    width: 20vw;
+    /*display: none;*/
+  }
+  & .logoTextLabel {
+    background-color: #cadee5;
+    color: #006182 !important;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .logoText {
+    font-family: "Comfortaa";
+    font-size: 3em;
+    font-weight: 500;
+    color: #cadee5;
+  }
+  .logoTextBig {
+    font-size: 10em;
+  }
+  .logoTextOriginal {
+    font-size: 15em;
+  }
+  .logoSeparator {
+    font-family: "Comfortaa";
+    font-weight: 500;
+    color: #cadee5;
+    font-size: 3em;
+    padding: 5px;
+  }
+  .logoHomeText {
+    /*display: none;*/
+    font-family: "Comfortaa";
+    font-size: 3em;
+    font-weight: 500;
+    color: #cadee5;
+    padding: 5px;
+  }
+  
 }
 
 .openBtn {
@@ -24,4 +83,37 @@ header {
   height: 28px;
   padding-top: 4vh;
   padding-bottom: 4vh;
+}
+#nav-ics {
+  display: none;
+}
+
+.spacer {
+  flex: 1;
+}
+nav > ul,
+nav > hr {
+  display: none;;
+}
+
+nav {
+  /*margin-top: 4vw;*/
+  display: unset;
+  position: unset;
+  align-content: center;
+  a {
+    font-family: "JosefinSans","Raleway";
+    font-size: 2.5em;
+    font-weight: 200;
+    text-transform: lowercase;
+  }
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+  }
+}
+
+
+main {
+  height: 82vh;
 }
