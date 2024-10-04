@@ -1,10 +1,18 @@
 .project {
+    /*
+    text-align: center;
+    font-family: "Montserrat";
+    text-shadow: none;
+    color: #2c2c2c;
+    */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
     opacity: 0;
+
+    padding-top: 10vh;
 }
 .projectVisible {
     opacity: 1;
@@ -25,12 +33,20 @@
     height: calc(350px / 2);
     height: 130px;
     width: 330px; /*alternative widht */
+    width: 400px;
+    width: 20.84vw;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
 }
-.project > .card:hover {
+.project > .card:hover,
+.project > .cardSelected {
     transform: scale(1.2);
     transition: all 1s ease-in-out;
     height: 350px;
+    box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.7);
 }
 .project > .card > .preview {
     border: 1px solid green;
@@ -41,6 +57,20 @@
     /*padding-bottom: 15px;*/
     margin: -30px;
     min-height: calc(350px / 2);
+    min-height: 150px;
+    min-height: 173px;
+
+    display: flex;
+    align-items: center;
+}
+.project > .card > .preview > a > img {
+    /*width: 80%; */
+    /*padding: 15px;*/
+    margin: auto;
+    display: block;
+    /*height: 15%;*/
+    border: 1px solid red;
+    width: 100%;
 }
 .project > .card > .content {
     border: 1px solid red;
@@ -49,6 +79,18 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 30px;
+}
+.project > .card > a {
+    color: #000000;
+    width: 70px;
+    padding: 10px;
+    margin-left: 16vw;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.project > .card > a:hover {
+    background-color: #CCCCCC;
 }
 
 @keyframes fadeIn {
