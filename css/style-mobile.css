@@ -79,7 +79,9 @@ nav {
         font-weight: bold;
         font-size: 2.5em;
     }
-    a:hover {
+    a:hover,
+    a:focus,
+    a:active {
         background-color: #cadee5;
         color: #006182;
     }
