@@ -1,0 +1,13 @@
+.logoGroup {
+
+    .logoText {
+        display: unset;
+        flex: 3;
+    }
+    .logoSeparator {
+        display: none !important;
+    }
+    .logoHomeText {
+        display: none;
+    }
+}
