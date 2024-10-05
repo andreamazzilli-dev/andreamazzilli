@@ -4,12 +4,16 @@
     }
     .contact {
         font-family: 'Raleway';
-        font-size: 5vw;
+        font-size: 5vw; /* mobile */
+        font-size: 2vw /* desktop */;
         color: #FFFFFF;
         a {
             color: #FFFFFF;
             text-decoration: none;
             font-weight: 600;
+            span {
+                display: none;
+            }
         }
         a:hover {
             text-decoration: underline;
@@ -21,7 +25,9 @@
             content: "";
             flex: 1;
             margin-left: 1rem;
-            margin-top: 2rem;
+            margin-top: 1.5rem; /* mobile */
+            margin-top: 1rem; /* desktop */
+            margin-top: 1vw; /*responsive? */
             height: 3px;
             background-color: #FFFFFF;
         }
@@ -31,21 +37,23 @@
 <div class="contact" id="contact">
     <h3>Email</h3>
     <a href="mailto:andrea.mazzilli@andrewm.net">andrea.mazzilli@andrewm.net</a>
-    <h3>WhatsApp</h3>
-    Mobile/WhatsApp
-    <a href="tel:+393933584120">(+39) 393-358 4120</a>
+    <h3>Phone</h3>
+    Mobile <br>
+    <a href="tel:+393933584120">(+39) 393-358 4120</a> <br>
+    WhatsApp <br>
+    <a href="https://wa.me/393933584120" aria-label="Chat on WhatsApp">Chat on WhatsApp</a> <br>
     <h3>Instant Messaging</h3>
     Signal: <a href="">andreamazzilli.87</a><br>
-    Matrix: <a href="https://matrix.to/">@andrewm:matrix.org</a>
+    Matrix: <a href="https://matrix.to/#/@andrewm:matrix.org">@andrewm:matrix.org</a>
     <h3>Social Network & Fediverse</h3>
     LinkedIn <br>
-    <a href="https://www.linkedin.com/mazzilliandrea">mazzilliandrea</a><br>
+    <a href="https://www.linkedin.com/mazzilliandrea"><span>https://www.linkedin.com/</span>mazzilliandrea</a><br>
     Facebook <br>
-    <a href="https://www.facebook.com/andrea.mazzilli">andrea.mazzilli</a> <br>
+    <a href="https://www.facebook.com/andrea.mazzilli"><span>https://www.facebook.com/</span>andrea.mazzilli</a> <br>
     Instagram <br>
-    <a href="https://www.Instagram.com/andreamazzilli">andreamazzilli</a> <br>
+    <a href="https://www.Instagram.com/andreamazzilli"><span>https://www.instagram.com/</span>andreamazzilli</a> <br>
     Mastodon <br>
-    <a href="https://mastodon.social/@andreamazzilli">andreamazzilli</a> <br>
+    <a href="https://mastodon.social/@andreamazzilli"><span>https://mastodon.social/</span>andreamazzilli</a> <br>
 
 
 </div>
