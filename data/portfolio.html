@@ -1,11 +1,60 @@
 <style>
-    img {
-        height: 100px;
+    .portfolio {
+        /*display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;*/
+        padding-left: 6vw;
+        padding-right: 6vw;
+        margin: 0 auto;
+    }
+    h3 {
+        color:#cadee5;
+    }
+    item {
+        border: 1px solid #cadee5;
+        border-radius: 10px;
+        /*height: 300px;*/
+        display: table-caption; /* for mobile */
+        display: flex; /* for responsive ? */
+        align-content: center;
+        flex-wrap: wrap;
+        margin: 10px;
+        font-family: 'Raleway';
+        color: #ffffff;
+        
+        a {
+            border: 1px solid white;
+            align-content: center;
+            padding: 15px;
+            display: none;
+            text-decoration: none;
+            background-color: #ffffff;
+            font-family: JosefinSans;
+            font-size: 1vw;
+            font-weight: 900;
+            flex-wrap: wrap;
+            color: #006182;
+            text-transform: uppercase;
+        }
+        a:hover {
+            background-color: #cadee5;
+        }
+        img {
+            height: 100px;
+            padding: 15px;
+        }
+    }
+    item:hover {
+        a { display: flex; }
     }
     img:hover {
-        transform: scale(5);
+        /*transform: scale(5);*/
         transition: 1s linear all;
     }
+    item:hover {
+        border-color: #ffffff;
+    }
+    img {height: 100px;}
     span {
         display: block;
     }
@@ -15,12 +64,15 @@
     <section>
         <h3>Web Design</h3>
         <item>
-            <h4>Antonio Tucci</h4>
-            <img src="" alt="">
+            <img src="data/portfolio/webdesign/2012-AntonioTucci.png" alt="">
+            Antonio Tucci Hairdresser (2024)
+            <a href="">Dettagli</a>
+            <a href="">Visita</a>
         </item>
     </section>
     <section>
-        <h3>Web Design Precedenti</h3>
+        <h3>Web Design - Lavori Precedenti</h3>
+        <h6>I seguenti siti non sono più visualizzabili online, ma è possibile visualizzare una immagine.</h6>
         <span>2019</span>
         <img src="data/portfolio/webdesign/2019-Sefim.png" alt="">
         <span>2015</span>
