@@ -4,6 +4,7 @@
 @import url('style-mobile-small.css') screen and (max-width: 320px) and (orientation: portrait);
 @import url('style-mobile-medium.css') screen and (max-width: 375px) and (orientation: portrait);
 @import url('style-mobile-large.css') screen and (max-width: 425px) and (orientation: portrait);
+@import url('style-mobile-large.css') screen and (max-width: 468px) and (orientation: portrait);
 
 
 /* 481 -600 Landscape */
