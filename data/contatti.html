@@ -5,19 +5,29 @@
     .contact {
         font-family: 'Raleway';
         font-size: 5vw; /* mobile */
-        /*font-size: 2vw; /* desktop */
         color: #FFFFFF;
         /* for mobile */
         line-height: 12vw;
+        text-align: right;
+
+        span.label {
+            display: block;
+            text-align: left;
+            img { 
+                width: 29px;
+                filter: invert(); 
+                padding: 3px;
+            }
+        }
         a {
-            color: #FFFFFF;
             text-decoration: none;
             font-weight: 600;
             /* for mobile */
             padding: 2vw;
-            background-color: #FFFFFF;
+            background-color: #cadee5;
             border-radius: 10px;
             color: black;
+            color: #006182;
             span {
                 display: none;
             }
@@ -25,43 +35,100 @@
         a:hover {
             text-decoration: underline;
         }
-        h3 {
+        h4 {
             display: flex;
         }
-        h3::after {
+        h4::after {
             content: "";
             flex: 1;
             margin-left: 1rem;
-            margin-top: 1.5rem; /* mobile */
-            margin-top: 1rem; /* desktop */
-            margin-top: 1vw; /*responsive? */
+            margin-top: 1.3rem; /* mobile */
+            margin-top: 2.6vh;
+            margin-top: 7%;
             height: 3px;
             background-color: #FFFFFF;
+        }
+    }
+
+    @media screen and (min-width: 1024px) and (orientation: landscape) {
+        .contact {
+            font-size: 2vw; /* desktop */
+            line-height: 3.5vw;
+            text-align: unset;
+            a  {
+                padding: 3px;
+                background-color: unset;
+                color: #FFFFFF;
+                border-bottom: 1px dotted #FFFFFF;
+                border-radius: 0px;
+            }
+            span.label {
+                display: inline;
+                text-align: unset;
+            }
+            a:hover {
+                text-decoration: none;
+                border-bottom-style: solid;
+            }
+            h4::after {
+                margin-top: 1rem; /* desktop */
+                margin-top: 1.6vw; /*responsive? */
+                margin-top: 3vh;
+                margin-top: 2%;
+            }
         }
     }
 </style>
 
 <div class="contact" id="contact">
-    <h3>Email</h3>
+    <h4>Email & Phone</h4>
+    <span class="label">
+        <img src="img/zest/mail.png" alt="">
+        Email
+    </span>
     <a href="mailto:andrea.mazzilli@andrewm.net">andrea.mazzilli@andrewm.net</a> <br>
-    PGP Key <a href="">93701494</a>
-    <h3>Phone</h3>
-    Mobile <br>
+    <div class="pgp" style="display: none;">
+        PGP Key <a href="">93701494</a>
+    </div>
+    <span class="label">
+        <img src="img/zest/phone.png" alt="">
+        Mobile
+    </span>
     <a href="tel:+393933584120">(+39) 393-358 4120</a> <br>
-    WhatsApp <br>
+    <span class="label">
+        <img src="img/zest/whatsapp.png" alt="">
+        WhatsApp
+    </span>
     <a href="https://wa.me/393933584120" aria-label="Chat on WhatsApp">Chat on WhatsApp</a> <br>
-    <h3>Instant Messaging</h3>
-    Signal: <a href="">andreamazzilli.87</a><br>
-    Matrix: <a href="https://matrix.to/#/@andrewm:matrix.org">@andrewm:matrix.org</a>
-    <h3>Social Network & Fediverse</h3>
-    LinkedIn <br>
+    <h4>Instant Messaging</h4>
+    <span class="label">
+        Signal:     
+    </span>
+    <a href="">andreamazzilli.87</a><br>
+    <span class="label">
+        Matrix: 
+    </span>
+    <a href="https://matrix.to/#/@andrewm:matrix.org">@andrewm:matrix.org</a>
+    <h4>Social Network & Fediverse</h4>
+    <span class="label">
+        <img src="img/zest/linkedin.png" alt="">
+        LinkedIn 
+    </span>
     <a href="https://www.linkedin.com/andreamazzilli"><span>https://www.linkedin.com/</span>andreamazzilli</a><br>
-    Facebook <br>
-    <a href="https://www.facebook.com/andrea.mazzilli"><span>https://www.facebook.com/</span>andrea.mazzilli</a> <br>
-    Instagram <br>
-    <a href="https://www.Instagram.com/andreamazzilli"><span>https://www.instagram.com/</span>andreamazzilli</a> <br>
-    Mastodon <br>
-    <a href="https://mastodon.social/@andreamazzilli"><span>https://mastodon.social/</span>andreamazzilli</a> <br>
+    <span class="label">
+        <img src="img/zest/facebook.png" alt="">
+        Facebook <br>
+    </span>
+    <a href="https://www.facebook.com/andreamazzilli.dev"><span>https://www.facebook.com/</span>andreamazzilli.dev</a><br>
+    <span class="label">
+        <img src="img/zest/instagram.png" alt="">
+        Instagram <br>
+    </span>
+    <a href="https://www.Instagram.com/andreamazzilli.dev"><span>https://www.instagram.com/</span>andreamazzilli.dev</a><br>
+    <span class="label">
+        Mastodon 
+    </span>
+        <a href="https://mastodon.social/@andreamazzilli"><span>https://mastodon.social/</span>andreamazzilli</a><br>
 
 
 </div>
