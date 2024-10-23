@@ -78,16 +78,10 @@ header {
   display: block !important;
   position: static;
   align-content: center;
-  padding: 6px;
-  padding: 4vh;
-  padding: 24px;
   padding: 12px;
-  /*border: 1px solid green;*/
   color: #ffffff;
-  font-size: 6vh;
-  font-size: 37px;
-  font-size: clamp(37px , 6vh, 37px);
   font-size: 2.5em;
+  /*border: 1px solid green;*/
 }
 #nav-ics {
   position: absolute;
@@ -104,7 +98,6 @@ header {
 
 nav {
   padding: 0px;
-  background-color: #0062827c !important;
   background-color: rgba(0,98,130,0.9) !important;
     ul,hr {
       display: none;
