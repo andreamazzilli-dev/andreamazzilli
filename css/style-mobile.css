@@ -10,6 +10,7 @@ header {
     padding: 15px;
     width: 96%;
     flex: 1;
+    font-family: "Comfortaa";
     font-size: 100%;
     text-align: center;
     /* to show on drawer */
@@ -29,7 +30,6 @@ header {
     .logoText {
       display: unset;
       color: #cadee5;
-      font-family: "Comfortaa";
       font-size: 3em;
       font-weight: 500;
     }
@@ -46,7 +46,6 @@ header {
       display: none;
       padding: 5px;
       color: #cadee5;
-      font-family: "Comfortaa";
       font-weight: 500;
       font-size: 3em;
     }
@@ -59,7 +58,6 @@ header {
       color: #ffffff;
       /*font-size: 2em;*/
       font-size: 3em;
-      font-family: "Comfortaa";
       font-weight: 500;
     }
 }
