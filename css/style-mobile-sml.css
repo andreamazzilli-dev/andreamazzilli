@@ -1,8 +1,11 @@
+header {
+    min-width: 320px;
+}
 .logoGroup {
-
+    /*min-width: 320px;*/
     .logoText {
-        display: unset;
-        flex: 3;
+        /*display: unset;
+        flex: 3;*/
     }
     .logoSeparator {
         display: none !important;
@@ -10,4 +13,7 @@
     .logoHomeText {
         display: none;
     }
+}
+#burger-menu {
+    
 }

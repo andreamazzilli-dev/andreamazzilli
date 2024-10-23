@@ -1,0 +1,12 @@
+header {
+    width: 80vw;
+    width: auto;
+}
+.logoGroup {
+    display: flex;
+    justify-content: center;
+    .logoHomeText {
+        display: none;
+    }
+
+}
