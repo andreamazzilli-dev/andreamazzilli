@@ -68,10 +68,7 @@ header {
   display: none;
 }
 
-img.hamburger {
-  filter: invert();
-}
-img.openBtn {
+#nav-burger img {
   height: 28px;
   padding-top: 4vh;
   padding-bottom: 4vh;
