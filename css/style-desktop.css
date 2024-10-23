@@ -1,0 +1,97 @@
+@import "../css/home-logo-experiment.css" screen;
+
+
+header {
+  margin: 3% auto !important;
+  margin: 3vh auto !important;
+  margin: 4vh auto !important;
+  text-align: center;
+  /*border: 1px solid red;*/
+  display: flex;
+  padding-left: 6vw;
+  padding-right: 6vw;
+}
+
+.logoGroup {
+  display: flex;
+  padding: 15px;
+  width: 40vw;
+  font-size: 1vw;
+  & .logo {
+    width: 20vw;
+    /*display: none;*/
+  }
+  & .logoTextLabel {
+    background-color: #cadee5;
+    color: #006182 !important;
+    border-radius: 10px;
+    padding: 5px;
+    align-content: center;
+  }
+  .logoText {
+    font-family: "Comfortaa";
+    font-size: 3em;
+    font-weight: 500;
+    color: #cadee5;
+  }
+  .logoTextBig {
+    font-size: 10em;
+  }
+  .logoTextOriginal {
+    font-size: 15em;
+  }
+  .logoSeparator {
+    font-family: "Comfortaa";
+    font-weight: 500;
+    color: #cadee5;
+    font-size: 3em;
+    padding: 5px;
+    align-content: center;
+  }
+  .logoHomeText {
+    /*display: none;*/
+    font-family: "Comfortaa";
+    font-size: 3em;
+    font-weight: 500;
+    color: #cadee5;
+    padding: 5px;
+    padding-left: 0;
+  }
+  
+}
+
+
+#nav-ics {
+  display: none;
+}
+
+.spacer {
+  flex: 1;
+}
+nav > ul,
+nav > hr {
+  display: none;;
+}
+
+nav {
+  /*margin-top: 4vw;*/
+  display: unset;
+  position: unset;
+  align-content: center;
+  font-size: 1vw;
+  a {
+    font-family: "JosefinSans","Raleway";
+    font-size: 2.5em;
+    font-weight: 200;
+    text-transform: lowercase;
+  }
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+  }
+}
+
+
+main {
+  height: 82vh;
+}
