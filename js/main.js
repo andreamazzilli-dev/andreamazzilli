@@ -11,7 +11,10 @@ async function getData(item) {
       const data = await response.text();
       //console.log(data);
       main.innerHTML = data
+      //loadStyle('style',item+'.css');
+
       toggleDrawer();
+      document.querySelector("#project").classList.add("projectVisible");
 
     } catch (error) {
       console.error(error.message);
@@ -32,7 +35,34 @@ function load(item){
 }
 
 
-    let navItemProgetti = document.getElementsByName('progetti'); //Nav Layer
-    document.querySelector('progetti').addEventListener('click', ()=>{
-        alert(navItemProgetti);
-    })
+    //let navItemProgetti = document.getElementsByName('progetti'); //Nav Layer
+    //document.querySelector('progetti').addEventListener('click', ()=>{
+//        alert(navItemProgetti);
+  //  })
+
+/* dynamic function */
+
+    async function loadStyle(container,item) {
+      let target = document.querySelector("#style");
+      const url = "data/"+item;
+      try {
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`Response status: ${response.status}`);
+        }
+  
+        const data = await response.text();
+        //console.log(data);
+        target.innerHTML = data
+  
+      } catch (error) {
+        console.error(error.message);
+      }
+    }
+
+    function selectCard() {
+      alert('prova');
+    }
+
+
+    document.getElementById('dnaverCard').addEventListener('click', selectCard );
