@@ -85,19 +85,16 @@ header {
 nav {
   padding: 0px;
   background-color: rgba(0,98,130,0.9) !important;
-    ul,hr {
-      display: none;
-    }
-    a {
-      text-transform: lowercase;
-      font-family: "Raleway";
-      font-weight: bold;
-      font-size: 2.5em;
-    }
-    a:hover,
-    a:focus,
-    a:active {
-        background-color: #cadee5;
-        color: #006182;
-    }
+  a {
+    text-transform: lowercase;
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+      background-color: #cadee5;
+      color: #006182;
+  }
 }

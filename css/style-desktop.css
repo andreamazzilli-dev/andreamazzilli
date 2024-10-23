@@ -51,10 +51,6 @@ header {
 .spacer {
   flex: 1;
 }
-nav > ul,
-nav > hr {
-  display: none;;
-}
 
 nav {
   display: unset;
