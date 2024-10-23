@@ -1,19 +1,19 @@
 header {
-    text-align: center;
-    display: inline-block;
-    padding-left: 2vw;
-    padding-right: 2vw;;
-    /*border: 1px solid red;*/
-    /*display: block;*/
-    display: flex;
+  /*display: block;*/
+  display: inline-block;
+  display: flex;
+  padding-left: 2vw;
+  padding-right: 2vw;;
+  text-align: center;
+  /*border: 1px solid red;*/
 }
 .logoGroup {
     display: flex;
     padding: 15px;
     width: 100%;
     width: 96%;
-    font-size: 100%;
     flex: 1;
+    font-size: 100%;
     text-align: center;
     /* to show on drawer */
     position: relative;
@@ -22,20 +22,20 @@ header {
       /*display: none;*/
     }
     & .logoTextLabel {
+      padding: 5px;
+      color: #006182 !important;
       background-color: #cadee5;
       background-color: #ffffff;
-      color: #006182 !important;
       border-radius: 10px;
-      padding: 5px;
       z-index: 101;
     }
     .logoText {
+      display: none;
+      display: unset;
+      color: #cadee5;
       font-family: "Comfortaa";
       font-size: 3em;
       font-weight: 500;
-      color: #cadee5;
-      display: none;
-      display: unset;
     }
     .logoTextBig {
       font-size: 10em;
@@ -44,59 +44,57 @@ header {
       font-size: 15em;
     }
     .logoSeparator {
+      /*display: unset;*/
+      display: none;
+      padding: 5px;
+      color: #cadee5;
       font-family: "Comfortaa";
       font-weight: 500;
-      color: #cadee5;
       font-size: 3em;
-      padding: 5px;
-      display: none;
-      /*display: unset;*/
     }
     .logoHomeText {
       /*display: none;*/
-      font-family: "Comfortaa";
-      font-size: 3em;
-      /*font-size: 2em;*/
-      font-weight: 500;
-      color: #cadee5;
-      color: #ffffff;
       padding: 5px;
       padding-left: 0;
       flex-grow: 3;
       align-content: center;
+      color: #cadee5;
+      color: #ffffff;
+      /*font-size: 2em;*/
+      font-size: 3em;
+      font-family: "Comfortaa";
+      font-weight: 500;
     }
 }
 
 .spacer {
-    flex: 0;
-    display: none;
+  display: none;
+  flex: 0;
 }
 
 img.hamburger {
-    filter: invert();
+  filter: invert();
 }
 img.openBtn {
-  filter: invert();
   height: 28px;
   padding-top: 4vh;
   padding-bottom: 4vh;
+  filter: invert();
 }
 #nav-burger {
-  /*border: 1px solid green;*/
-  color: #ffffff;
-
-  font-size: 6vh;
-  font-size: 37px;
-  font-size: clamp(37px , 6vh, 37px);
-  font-size: 2.5em;
+  display: block !important;
+  position: static;
+  align-content: center;
   padding: 6px;
   padding: 4vh;
   padding: 24px;
   padding: 12px;
-
-  display: block !important;
-  position: static;
-  align-content: center;
+  /*border: 1px solid green;*/
+  color: #ffffff;
+  font-size: 6vh;
+  font-size: 37px;
+  font-size: clamp(37px , 6vh, 37px);
+  font-size: 2.5em;
 }
 #nav-ics {
   position: absolute;
@@ -112,17 +110,17 @@ img.openBtn {
 }
 
 nav {
-    background-color: #0062827c !important;
-    background-color: rgba(0,98,130,0.9) !important;
-    padding: 0px;
+  padding: 0px;
+  background-color: #0062827c !important;
+  background-color: rgba(0,98,130,0.9) !important;
     ul,hr {
-        display: none;
+      display: none;
     }
     a {
-        font-family: "Raleway";
-        text-transform: lowercase;
-        font-weight: bold;
-        font-size: 2.5em;
+      text-transform: lowercase;
+      font-family: "Raleway";
+      font-weight: bold;
+      font-size: 2.5em;
     }
     a:hover,
     a:focus,

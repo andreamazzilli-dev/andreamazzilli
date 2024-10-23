@@ -2,14 +2,14 @@
 
 
 header {
+  display: flex;
   margin: 3% auto !important;
   margin: 3vh auto !important;
   margin: 4vh auto !important;
-  text-align: center;
-  /*border: 1px solid red;*/
-  display: flex;
   padding-left: 6vw;
   padding-right: 6vw;
+  text-align: center;
+  /*border: 1px solid red;*/
 }
 
 .logoGroup {
@@ -22,17 +22,17 @@ header {
     /*display: none;*/
   }
   & .logoTextLabel {
+    padding: 5px;
+    border-radius: 10px;
     background-color: #cadee5;
     color: #006182 !important;
-    border-radius: 10px;
-    padding: 5px;
     align-content: center;
   }
   .logoText {
+    color: #cadee5;
     font-family: "Comfortaa";
     font-size: 3em;
     font-weight: 500;
-    color: #cadee5;
   }
   .logoTextBig {
     font-size: 10em;
@@ -41,21 +41,21 @@ header {
     font-size: 15em;
   }
   .logoSeparator {
-    font-family: "Comfortaa";
-    font-weight: 500;
-    color: #cadee5;
-    font-size: 3em;
     padding: 5px;
+    color: #cadee5;
+    font-family: "Comfortaa";
+    font-size: 3em;
+    font-weight: 500;
     align-content: center;
   }
   .logoHomeText {
     /*display: none;*/
+    padding: 5px;
+    padding-left: 0;
+    color: #cadee5;
     font-family: "Comfortaa";
     font-size: 3em;
     font-weight: 500;
-    color: #cadee5;
-    padding: 5px;
-    padding-left: 0;
   }
   
 }
