@@ -30,12 +30,11 @@ header {
       font-weight: 500;
     }
     .logoSeparator {
-      /*display: unset;*/
       display: none;
       padding: 5px;
       color: #cadee5;
-      font-weight: 500;
       font-size: 3em;
+      font-weight: 500;
     }
     .logoHomeText {
       padding: 5px;
@@ -86,10 +85,10 @@ nav {
   padding: 0px;
   background-color: rgba(0,98,130,0.9) !important;
   a {
-    text-transform: lowercase;
     font-family: "Raleway";
-    font-weight: bold;
     font-size: 2.5em;
+    font-weight: bold;
+    text-transform: lowercase;
   }
   a:hover,
   a:focus,

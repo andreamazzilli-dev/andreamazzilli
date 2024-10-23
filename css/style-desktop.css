@@ -44,12 +44,12 @@ header {
   }
 }
 
-#nav-ics {
-  display: none;
-}
-
 .spacer {
   flex: 1;
+}
+
+#nav-ics {
+  display: none;
 }
 
 nav {
