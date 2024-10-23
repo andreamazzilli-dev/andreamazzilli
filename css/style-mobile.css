@@ -1,6 +1,4 @@
 header {
-  /*display: block;*/
-  display: inline-block;
   display: flex;
   padding-left: 2vw;
   padding-right: 2vw;;
@@ -10,7 +8,6 @@ header {
 .logoGroup {
     display: flex;
     padding: 15px;
-    width: 100%;
     width: 96%;
     flex: 1;
     font-size: 100%;
@@ -30,7 +27,6 @@ header {
       z-index: 101;
     }
     .logoText {
-      display: none;
       display: unset;
       color: #cadee5;
       font-family: "Comfortaa";
@@ -38,9 +34,11 @@ header {
       font-weight: 500;
     }
     .logoTextBig {
+      /* not used */
       font-size: 10em;
     }
     .logoTextOriginal {
+      /* not used */
       font-size: 15em;
     }
     .logoSeparator {
@@ -53,7 +51,6 @@ header {
       font-size: 3em;
     }
     .logoHomeText {
-      /*display: none;*/
       padding: 5px;
       padding-left: 0;
       flex-grow: 3;
@@ -69,7 +66,6 @@ header {
 
 .spacer {
   display: none;
-  flex: 0;
 }
 
 img.hamburger {
