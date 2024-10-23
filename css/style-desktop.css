@@ -3,8 +3,6 @@
 
 header {
   display: flex;
-  margin: 3% auto !important;
-  margin: 3vh auto !important;
   margin: 4vh auto !important;
   padding-left: 6vw;
   padding-right: 6vw;
@@ -35,9 +33,11 @@ header {
     font-weight: 500;
   }
   .logoTextBig {
+    /* not used*/
     font-size: 10em;
   }
   .logoTextOriginal {
+    /* not used */
     font-size: 15em;
   }
   .logoSeparator {
@@ -49,7 +49,6 @@ header {
     align-content: center;
   }
   .logoHomeText {
-    /*display: none;*/
     padding: 5px;
     padding-left: 0;
     color: #cadee5;
@@ -74,10 +73,10 @@ nav > hr {
 }
 
 nav {
-  /*margin-top: 4vw;*/
   display: unset;
   position: unset;
   align-content: center;
+  text-align: center;
   font-size: 1vw;
   a {
     font-family: "JosefinSans","Raleway";
