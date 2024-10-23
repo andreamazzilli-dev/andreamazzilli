@@ -16,11 +16,7 @@ header {
   width: 40vw;
   font-family: "Comfortaa";
   font-size: 1vw;
-  & .logo {
-    width: 20vw;
-    /*display: none;*/
-  }
-  & .logoTextLabel {
+  .logoTextLabel {
     padding: 5px;
     border-radius: 10px;
     background-color: #cadee5;
@@ -31,14 +27,6 @@ header {
     color: #cadee5;
     font-size: 3em;
     font-weight: 500;
-  }
-  .logoTextBig {
-    /* not used*/
-    font-size: 10em;
-  }
-  .logoTextOriginal {
-    /* not used */
-    font-size: 15em;
   }
   .logoSeparator {
     padding: 5px;
@@ -54,9 +42,7 @@ header {
     font-size: 3em;
     font-weight: 500;
   }
-  
 }
-
 
 #nav-ics {
   display: none;

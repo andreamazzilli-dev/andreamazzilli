@@ -13,18 +13,14 @@ header {
     font-family: "Comfortaa";
     font-size: 100%;
     text-align: center;
-    /* to show on drawer */
     position: relative;
-    & .logo {
-      width: 20vw;
-      /*display: none;*/
-    }
-    & .logoTextLabel {
+    .logoTextLabel {
       padding: 5px;
       color: #006182 !important;
       background-color: #cadee5;
       background-color: #ffffff;
       border-radius: 10px;
+      /* to show on drawer */
       z-index: 101;
     }
     .logoText {
@@ -32,14 +28,6 @@ header {
       color: #cadee5;
       font-size: 3em;
       font-weight: 500;
-    }
-    .logoTextBig {
-      /* not used */
-      font-size: 10em;
-    }
-    .logoTextOriginal {
-      /* not used */
-      font-size: 15em;
     }
     .logoSeparator {
       /*display: unset;*/
