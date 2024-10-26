@@ -2,83 +2,69 @@
 
 
 header {
-  margin: 3% auto !important;
-  margin: 3vh auto !important;
-  margin: 4vh auto !important;
-  text-align: center;
-  /*border: 1px solid red;*/
   display: flex;
+  margin: 4vh auto !important;
   padding-left: 6vw;
   padding-right: 6vw;
+  text-align: center;
+  /*border: 1px solid red;*/
 }
 
 .logoGroup {
   display: flex;
   padding: 15px;
   width: 40vw;
+  font-family: "Comfortaa";
   font-size: 1vw;
-  & .logo {
-    width: 20vw;
-    /*display: none;*/
-  }
-  & .logoTextLabel {
+  .logoTextLabel {
+    padding: 5px;
+    border-radius: 10px;
     background-color: #cadee5;
     color: #006182 !important;
-    border-radius: 10px;
-    padding: 5px;
     align-content: center;
   }
   .logoText {
-    font-family: "Comfortaa";
+    color: #cadee5;
     font-size: 3em;
     font-weight: 500;
-    color: #cadee5;
-  }
-  .logoTextBig {
-    font-size: 10em;
-  }
-  .logoTextOriginal {
-    font-size: 15em;
   }
   .logoSeparator {
-    font-family: "Comfortaa";
-    font-weight: 500;
+    padding: 5px;
     color: #cadee5;
     font-size: 3em;
-    padding: 5px;
+    font-weight: 500;
     align-content: center;
   }
   .logoHomeText {
-    /*display: none;*/
-    font-family: "Comfortaa";
-    font-size: 3em;
-    font-weight: 500;
-    color: #cadee5;
     padding: 5px;
     padding-left: 0;
+    color: #cadee5;
+    font-size: 3em;
+    font-weight: 500;
   }
-  
-}
-
-
-#nav-ics {
-  display: none;
 }
 
 .spacer {
   flex: 1;
 }
-nav > ul,
-nav > hr {
-  display: none;;
+
+#nav-ics {
+  display: none;
 }
 
-nav {
-  /*margin-top: 4vw;*/
+nav,
+nav > ul > li {
   display: unset;
   position: unset;
   align-content: center;
+  text-align: center;
   font-size: 1vw;
+  ul {
+    margin: 0;
+    margin-left: -40px;
+    display: none;
+  }
+  hr { display: none;}
   a {
     font-family: "JosefinSans","Raleway";
     font-size: 2.5em;
