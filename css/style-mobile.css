@@ -81,9 +81,11 @@ header {
   aspect-ratio: 1 / 1;
 }
 
-nav {
+nav,
+nav > ul > li {
   padding: 0px;
   background-color: rgba(0,98,130,0.9) !important;
+  ul, hr { display: none;}
   a {
     font-family: "Raleway";
     font-size: 2.5em;

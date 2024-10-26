@@ -52,12 +52,19 @@ header {
   display: none;
 }
 
-nav {
+nav,
+nav > ul > li {
   display: unset;
   position: unset;
   align-content: center;
   text-align: center;
   font-size: 1vw;
+  ul {
+    margin: 0;
+    margin-left: -40px;
+    display: none;
+  }
+  hr { display: none;}
   a {
     font-family: "JosefinSans","Raleway";
     font-size: 2.5em;
