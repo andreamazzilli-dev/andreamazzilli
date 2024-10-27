@@ -1,6 +1,9 @@
 <style>
     main {
         padding: 6vw;
+        padding-top: 2vh;
+        min-height: 62vh;
+        height: auto;
     }
     .contact {
         font-family: 'Raleway';
@@ -16,7 +19,7 @@
             img { 
                 width: 29px;
                 filter: invert(); 
-                padding: 3px;
+                padding: 6px;
             }
         }
         a {
@@ -65,8 +68,12 @@
                 border-radius: 0px;
             }
             span.label {
-                display: inline;
+                display: inline-flex;
                 text-align: unset;
+                img {
+                    aspect-ratio: 1 / 1;
+                    align-self: center;
+                }
             }
             a:hover {
                 text-decoration: none;
@@ -102,6 +109,8 @@
         WhatsApp
     </span>
     <a href="https://wa.me/393933584120" aria-label="Chat on WhatsApp">Chat on WhatsApp</a> <br>
+
+
     <h4>Instant Messaging</h4>
     <span class="label">
         Signal:     
@@ -111,6 +120,8 @@
         Matrix: 
     </span>
     <a href="https://matrix.to/#/@andrewm:matrix.org">@andrewm:matrix.org</a>
+
+
     <h4>Social Network & Fediverse</h4>
     <span class="label">
         <img src="img/zest/linkedin.png" alt="">
