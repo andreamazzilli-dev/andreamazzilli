@@ -10,62 +10,83 @@
     h3 {
         color:#cadee5;
     }
-    item {
-        border: 1px solid #cadee5;
-        border-radius: 10px;
-        /*height: 300px;*/
-        display: table-caption; /* for mobile */
-        display: flex; /* for responsive ? */
-        align-content: center;
-        flex-wrap: wrap;
-        margin: 10px;
-        padding: 10px;
-        font-family: 'Raleway';
-        color: #ffffff;
-        background-color: #054b62;
-        div {
-            flex: auto;
-            flex-basis: min-content;
+    .webdesign {
+
+        item {
+            border: 1px solid #cadee5;
+            border-radius: 10px;
+            /*height: 300px;*/
+            display: table-caption; /* for mobile */
+            display: flex; /* for responsive ? */
+            align-content: center;
+            flex-wrap: wrap;
+            margin: 10px;
             padding: 10px;
-            padding-left: 30px;
-            desc {
-                font-size: 20px;
+            font-family: 'Raleway';
+            color: #ffffff;
+            background-color: #054b62;
+            div {
+                flex: auto;
+                flex-basis: min-content;
+                padding: 10px;
+                padding-left: 30px;
+                desc {
+                    font-size: 20px;
+                }
+        }
+            a {
+                border: 1px solid white;
+                align-content: center;
+                padding: 15px;
+                display: none;
+                text-decoration: none;
+                background-color: #ffffff;
+                font-family: JosefinSans;
+                font-size: 1vw;
+                font-weight: 900;
+                flex-wrap: wrap;
+                color: #006182;
+                text-transform: uppercase;
+            }
+            a:hover {
+                background-color: #cadee5;
+            }
+            img {
+                height: 100px;
+                padding: 30px;
+                margin:-10px;
+                background-color: #cadee5;
             }
         }
-        a {
-            border: 1px solid white;
-            align-content: center;
-            padding: 15px;
-            display: none;
-            text-decoration: none;
-            background-color: #ffffff;
-            font-family: JosefinSans;
-            font-size: 1vw;
-            font-weight: 900;
+        item:hover {
+            a { display: flex; }
+        }
+        img:hover {
+            /*transform: scale(5);*/
+            transition: 1s linear all;
+        }
+        item:hover {
+            border-color: #ffffff;
+        }
+    }
+
+    .graphicdesign {
+        .imageContainer {
+            display: flex;
             flex-wrap: wrap;
-            color: #006182;
-            text-transform: uppercase;
+            item {
+                img {
+                    background-color: #054b62;
+                    border: 1px solid #cadee5;
+                    border-radius: 6px;
+                    padding: 5px;
+                    height: auto;
+                    max-height: 137px;
+                }
+            }
         }
-        a:hover {
-            background-color: #cadee5;
-        }
-        img {
-            height: 100px;
-            padding: 30px;
-            margin:-10px;
-            background-color: #cadee5;
-        }
     }
-    item:hover {
-        a { display: flex; }
-    }
-    img:hover {
-        /*transform: scale(5);*/
-        transition: 1s linear all;
-    }
-    item:hover {
-        border-color: #ffffff;
-    }
+    
     img {height: 100px;}
     span {
         display: block;
@@ -73,7 +94,7 @@
 </style>
 
 <div id="portfolio" class="portfolio">
-    <section>
+    <section class="webdesign">
         <h3>Web Design</h3>
         <item>
             <img src="data/portfolio/webdesign/2012-AntonioTucci.png" alt="">
@@ -86,23 +107,34 @@
         </item>
     </section>
 
-    <section>
+    <section class="graphicdesign">
         <h3>Graphic Design</h3>
-        <item>
-            (biglietto da visita)
-        </item>
-        <item>
-            (locandine antonio tucci)
-        </item>
-        <item>
-            (post social antonio tucci)
-        </item>
-        <item>
-            (logo napoli passion)
-        </item>
-        <item>
-            materiale potere al popolo
-        </item>
+        <div class="imageContainer">
+            <item>
+                <img src="data/portfolio/graphicdesign/1730061044005.jpg" alt="">
+            </item>
+            <item>
+                <img src="data/portfolio/graphicdesign/1730061044024.jpg" alt="">
+            </item>
+            <item>
+                <img src="data/portfolio/graphicdesign/napolipassion.png" alt="">
+            </item>
+            <item>
+                <img src="data/portfolio/graphicdesign/napolipassion_invert.png" alt="">
+            </item>
+            <item>
+                <img src="data/portfolio/graphicdesign/acan.png" alt="">
+            </item>
+            <item>
+                (locandine antonio tucci)
+            </item>
+            <item>
+                (post social antonio tucci)
+            </item>
+            <item>
+                materiale potere al popolo
+            </item>
+        </div>
     </section>
 
     <section>
