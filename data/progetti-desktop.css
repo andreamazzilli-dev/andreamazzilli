@@ -13,85 +13,105 @@
     opacity: 0;
 
     padding-top: 10vh;
+
+    .card {
+        background-color: rgba(255,255,255,1);
+        background-color: #cadee5;
+        /*background-color: #006182;*/
+        width: 300px;
+        height: 350px;
+        box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.4);
+        box-shadow: 2px 3px 7px 1px rgba(0,0,0,0.1);
+        margin: 10px;
+        transition: all 0.3s ease-in-out;
+        padding: 30px;
+        margin: 0 auto;
+    
+        height: calc(350px / 2);
+        height: 130px;
+        height: 13vh;
+        width: 330px; /*alternative widht */
+        width: 400px;
+        width: 20.84vw;
+        overflow: hidden;
+    
+        display: flex;
+        flex-direction: column;
+        /*align-items: center;*/
+        border-radius: 20px;
+        font-size: 1rem;
+        
+        &:hover,
+        .cardSelected {
+            transform: scale(1.2);
+            transition: all 1s ease-in-out;
+            height: 350px;
+            height: 46vh;
+            box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.7);
+        }
+        .preview {
+            /*border: 1px solid green;*/
+            height: 50%;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            /*padding-bottom: 15px;*/
+            margin: -30px;
+            min-height: calc(350px / 2);
+            min-height: 150px;
+            min-height: 173px;
+            min-height: 23vh;
+        
+            display: flex;
+            align-items: center;
+        }
+        .preview > a {
+            margin-left: auto;
+        }
+        .preview > a > img {
+            /*width: 80%; */
+            /*padding: 15px;*/
+            margin: auto;
+            display: block;
+            /*height: 15%;*/
+            /*border: 1px solid red;*/
+            width: 100%;
+        }
+        .content {
+            /*border: 1px solid red;*/
+            height: 50%;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin: -30px;
+            margin-top: 30px;
+        }
+        a {
+            color: #000000;
+            width: 70px;
+            width: max-content;
+            padding: 10px;
+            margin-left: 16vw;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            background-color: #CCCCCC;
+        }
+    }
+
+    .cardOpened {
+    height: 46vh;
+}
+   
 }
 .projectVisible {
     opacity: 1;
     animation: fadeIn linear 2s;
     animation-fill-mode: forwards;
 }
-.project > .card {
-    background-color: rgba(255,255,255,1);
-    width: 300px;
-    height: 350px;
-    box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.4);
-    box-shadow: 2px 3px 7px 1px rgba(0,0,0,0.1);
-    margin: 10px;
-    transition: all 0.3s ease-in-out;
-    padding: 30px;
-    margin: 0 auto;
 
-    height: calc(350px / 2);
-    height: 130px;
-    width: 330px; /*alternative widht */
-    width: 400px;
-    width: 20.84vw;
-    overflow: hidden;
-
-    display: flex;
-    flex-direction: column;
-    /*align-items: center;*/
-}
-.project > .card:hover,
-.project > .cardSelected {
-    transform: scale(1.2);
-    transition: all 1s ease-in-out;
-    height: 350px;
-    box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.7);
-}
-.project > .card > .preview {
-    border: 1px solid green;
-    height: 50%;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    /*padding-bottom: 15px;*/
-    margin: -30px;
-    min-height: calc(350px / 2);
-    min-height: 150px;
-    min-height: 173px;
-
-    display: flex;
-    align-items: center;
-}
-.project > .card > .preview > a > img {
-    /*width: 80%; */
-    /*padding: 15px;*/
-    margin: auto;
-    display: block;
-    /*height: 15%;*/
-    border: 1px solid red;
-    width: 100%;
-}
-.project > .card > .content {
-    border: 1px solid red;
-    height: 50%;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 30px;
-}
-.project > .card > a {
-    color: #000000;
-    width: 70px;
-    padding: 10px;
-    margin-left: 16vw;
-    margin-top: 10px;
-    text-decoration: none;
-}
-
-.project > .card > a:hover {
-    background-color: #CCCCCC;
-}
 
 @keyframes fadeIn {
 from {
