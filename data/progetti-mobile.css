@@ -20,6 +20,8 @@
         background-color: rgba(255,255,255,1);
         background-color: #cadee5;
         /*background-color: #006182;*/
+        background-color: #054b62;
+        color: #ffffff;
         width: 300px;
         height: 350px;
         box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.4);
@@ -48,14 +50,23 @@
         width: 90%;
         width: 65vw;
         width: 71vw;
+        height: 24vh;
         
         &:hover,
         .cardSelected {
-            transform: scale(1.2);
+            transform: scale(1.1);
             transition: all 1s ease-in-out;
             height: 350px;
-            height: 46vh;
+            height: 51vh;
             box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.7);
+            /*background-color: #cadee5;
+            color: #111111;*/
+        }
+        &:hover a.cardLink {
+            color: #ffffff;
+        }
+        &:hover a.cardLink:hover {
+            color: #000000;
         }
         .preview {
             /*border: 1px solid green;*/
@@ -72,6 +83,7 @@
         
             display: flex;
             align-items: center;
+            background-color: #cadee5;
             a {
                 margin-left: auto;
                 img {
@@ -83,6 +95,9 @@
                     /*border: 1px solid red;*/
                     width: 100%;
                 }
+                a:hover {
+                    background-color: transparent;
+                }
             }
         }
         .content {
@@ -93,23 +108,30 @@
             padding-right: 15px;
             margin-top: 30px;
         }
-        a {
-            color: #000000;
+        a.cardLink {
+            color: #ffffff;
             width: 70px;
             width: max-content;
             padding: 10px;
             margin-left: 16vw;
             margin-top: 10px;
             text-decoration: none;
+            border-radius: 6px;
+            align-self: flex-end;
         }
-        
-        a:hover {
-            background-color: #CCCCCC;
+        &:hover a {
+            color: #000000;
+            transition: all 0.3s ease-in-out;
+        }
+        a.cardLink:hover,
+        a.cardLink:focus,
+        a.cardLink:active {
+            background-color: #0087b4;
         }
     }
 
     .cardOpened {
-    height: 46vh;
+    /*height: 46vh;*/
 }
    
 }
