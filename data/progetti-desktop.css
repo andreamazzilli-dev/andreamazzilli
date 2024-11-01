@@ -11,8 +11,7 @@
     width: 90%;
     margin: 0 auto;
     opacity: 0;
-
-    padding-top: 10vh;
+    justify-content: space-around;
 
     .card {
         background-color: rgba(255,255,255,1);
@@ -46,6 +45,7 @@
         /*align-items: center;*/
         border-radius: 20px;
         font-size: 1rem;
+        font-size: 2vh;
         /*font-weight: 900;*/
         outline: #000000;
         &:hover,
@@ -70,6 +70,7 @@
             min-height: 150px;
             min-height: 173px;
             min-height: 23vh;
+            min-height: 170px;
         
             display: flex;
             align-items: center;
