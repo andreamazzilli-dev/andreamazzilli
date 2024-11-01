@@ -51,7 +51,7 @@
         width: 65vw;
         width: 71vw;
         height: 24vh;
-        
+        min-height: 219px;
         &:hover,
         .cardSelected {
             transform: scale(1.1);
@@ -80,12 +80,14 @@
             min-height: 150px;
             min-height: 173px;
             min-height: 23vh;
+            min-height: 207px;
         
             display: flex;
             align-items: center;
             background-color: #cadee5;
             a {
                 margin-left: auto;
+                margin: auto;
                 img {
                     /*width: 80%; */
                     /*padding: 15px;*/
