@@ -39,7 +39,7 @@
                 padding-top: 10px;
                 padding-left: 30px;
                 line-height: 5vh;
-                line-height: 31px;
+                line-height: 40px;
                 desc {
                     font-size: 20px;
                     font-size: 1.5rem;
@@ -66,13 +66,15 @@
                 background-color: #cadee5;
                 text-decoration: none;
                 height: 2vh;
-                height: 20px;
+                height: 30px;
                 padding: 10px;
                 font-size: 0.5em;
                 font-weight: bold;
                 border-radius: 10px;
                 align-self: end;
                 color: #006182;
+                display: flex;
+                align-items: center;
             }
             a:hover {
                 background-color: #cadee5;
@@ -133,6 +135,22 @@
                     }
                 }
 
+        }
+        @media screen and (min-width: 708px) and (max-width: 1360px) {
+
+                item {
+                    border: 1px solid green;
+                    min-width: unset;
+                    /*font-size: 1vw;*/
+                    div {
+                        line-height: 1;
+                        font-size: 0.8em;
+                        justify-content: space-between;
+                        desc {
+                            display: none;
+                        }
+                    }
+                }
         }
         @media screen and (min-width: 1024px) and (orientation: landscape) {
             
