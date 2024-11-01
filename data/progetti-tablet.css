@@ -1,6 +1,5 @@
 .project {
     justify-content: space-around;
-    padding-top: 5vh;
     & .card {
         min-height: 380px;
         margin: 5px;
