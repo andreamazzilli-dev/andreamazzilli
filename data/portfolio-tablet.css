@@ -1,0 +1,17 @@
+@media screen and (min-width: 708px) and (max-width: 1360px) {
+
+    item {
+        /*border: 1px solid green;*/
+        min-width: unset;
+        /*font-size: 1vw;*/
+        div {
+            line-height: 1;
+            font-size: 0.8em;
+            justify-content: space-between;
+            padding-right: 0;
+            desc {
+                display: none;
+            }
+        }
+    }
+}

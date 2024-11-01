@@ -1,0 +1,80 @@
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+    .portfolio {
+        margin: 0 6vw 0 6vw;
+        section {
+            h3 {
+                color: #cadee5;
+                font-size: 2.0rem;
+            }
+            item {
+                min-width: unset;
+                max-height: unset;
+                display: flex;
+                flex-direction: row;
+                width: 83vw;
+
+                /* imported from desktop  portfolio-desktop*/
+                border-radius: 20px;
+                align-content: center;
+                flex-wrap: wrap;
+                margin: 10px;
+                padding: 10px;
+                font-family: "Raleway";
+                color: #ffffff;
+                background-color: #054b62;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 20px 20px 0 0;
+
+                    /*imported from desktop */
+                    padding: 13px;
+                    margin: -10px;
+                    background-color: #cadee5;
+                    align-self: center;
+                }
+                div {
+                    display: flex;
+                    flex-basis: unset;
+                    flex-direction: column;
+                    font-size: 5vw;
+                    line-height: unset;
+                    padding: 10px;
+                    margin: 10px;
+
+                    /* imported from portfolio-tablet */
+                    justify-content: space-between;
+
+                    /*imported from portfoliod-desktop */
+                    flex: auto;
+                    flex-wrap: wrap;
+
+
+                    desc {
+                        display: none;
+                    }
+                    a {
+                        margin-top: 20px;
+                        padding: 15px;
+                        font-size: 0.6em;
+
+                        /* imported from desktop */
+                        font-family: "JosefinSans";
+                        text-transform: uppercase;
+                        background-color: #cadee5;
+                        text-decoration: none;
+                        height: 1.5vw;
+                        font-weight: bold;
+                        border-radius: 10px;
+                        align-self: end;
+                        color: #006182;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+            
+        }
+    }
+}
