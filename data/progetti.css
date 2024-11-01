@@ -2,4 +2,14 @@
 @import "progetti-mobile.css" screen and (max-width: 768px) and (orientation: landscape);
 @import "progetti-mobile.css" screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait);
 @import "progetti-desktop.css" screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape);
+@import "progetti-tablet.css" screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape);
 @import "progetti-desktop.css" screen and (min-width: 1024px);
+
+.information {
+    background-color: #054b62;
+    border-radius: 15px;
+    font-size: 2.5vh;
+    color: #ffffff;
+    padding: 15px;
+    margin: 50px;
+  }
