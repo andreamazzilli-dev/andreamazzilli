@@ -1,17 +1,20 @@
-@media screen and (min-width: 708px) and (max-width: 1360px) {
+@import "portfolio-desktop.css";
 
-    item {
-        /*border: 1px solid green;*/
-        min-width: unset;
-        /*font-size: 1vw;*/
-        div {
-            line-height: 1;
-            font-size: 0.8em;
-            justify-content: space-between;
-            padding-right: 0;
-            desc {
-                display: none;
+.portfolio {
+    section.webdesign {
+        item {
+            min-width: unset;
+            /*font-size: 1vw;*/
+            div {
+                padding-right: 0;
+                justify-content: space-between;
+                font-size: 0.8em;
+                line-height: 1;
+                desc {
+                    display: none;
+                }
             }
         }
-    }
+    }    
 }
+/*}*/

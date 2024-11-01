@@ -5,7 +5,6 @@
 @import "portfolio-desktop.css" screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape);
 @import "portfolio-tablet.css" screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape);
 */
-@import "portfolio-desktop.css";
 @import "portfolio-mobile.css" screen and (max-width: 1024px) and (orientation: portrait);
 @import "portfolio-tablet.css" screen and (min-width: 708px) and (max-width: 1360px);
-@import "portfolio-desktop.css" screen and (min-width: 1024px);
+@import "portfolio-desktop.css" screen and (min-width: 1360px) and (orientation: landscape);

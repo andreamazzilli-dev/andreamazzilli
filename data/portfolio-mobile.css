@@ -1,80 +1,81 @@
-@media screen and (max-width: 1024px) and (orientation: portrait) {
-    .portfolio {
-        margin: 0 6vw 0 6vw;
-        section {
-            h3 {
-                color: #cadee5;
-                font-size: 2.0rem;
-            }
-            item {
-                min-width: unset;
-                max-height: unset;
-                display: flex;
-                flex-direction: row;
-                width: 83vw;
+.portfolio {
+    margin: 0 6vw 0 6vw;
 
-                /* imported from desktop  portfolio-desktop*/
-                border-radius: 20px;
-                align-content: center;
-                flex-wrap: wrap;
+    section.webdesign {
+
+        h3 {
+            color: #cadee5;
+            font-size: 2.0rem;
+        }
+        item {
+            margin: 10px;
+            padding: 10px;
+            max-height: unset;
+            min-width: unset;
+            width: 83vw;
+
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-content: center;
+
+            border-radius: 20px;
+            background-color: #054b62;
+            color: #ffffff;
+            font-family: "Raleway";
+
+            img {
+                margin: -10px;
+                padding: 13px;
+                height: auto;
+                width: 100%;
+
+                align-self: center;
+
+                background-color: #cadee5;
+                border-radius: 20px 20px 0 0;
+            }
+            div {
                 margin: 10px;
                 padding: 10px;
-                font-family: "Raleway";
-                color: #ffffff;
-                background-color: #054b62;
 
-                img {
-                    width: 100%;
-                    height: auto;
-                    border-radius: 20px 20px 0 0;
+                display: flex;
+                flex-basis: unset;
+                flex-direction: column;
+                font-size: 5vw;
+                line-height: unset;
 
-                    /*imported from desktop */
-                    padding: 13px;
-                    margin: -10px;
-                    background-color: #cadee5;
-                    align-self: center;
+                /* imported from portfolio-tablet */
+                justify-content: space-between;
+
+                /*imported from portfoliod-desktop */
+                flex: auto;
+                flex-wrap: wrap;
+
+                desc {
+                    display: none;
                 }
-                div {
+                a {
+                    margin-top: 20px;
+                    padding: 15px;
+                    height: 1.5vw;
+
                     display: flex;
-                    flex-basis: unset;
-                    flex-direction: column;
-                    font-size: 5vw;
-                    line-height: unset;
-                    padding: 10px;
-                    margin: 10px;
+                    align-items: center;
+                    align-self: end;
 
-                    /* imported from portfolio-tablet */
-                    justify-content: space-between;
-
-                    /*imported from portfoliod-desktop */
-                    flex: auto;
-                    flex-wrap: wrap;
-
-
-                    desc {
-                        display: none;
-                    }
-                    a {
-                        margin-top: 20px;
-                        padding: 15px;
-                        font-size: 0.6em;
-
-                        /* imported from desktop */
-                        font-family: "JosefinSans";
-                        text-transform: uppercase;
-                        background-color: #cadee5;
-                        text-decoration: none;
-                        height: 1.5vw;
-                        font-weight: bold;
-                        border-radius: 10px;
-                        align-self: end;
-                        color: #006182;
-                        display: flex;
-                        align-items: center;
-                    }
+                    border-radius: 10px;
+                    background-color: #cadee5;
+                    color: #006182;
+                    
+                    font-family: "JosefinSans",sans-serif;
+                    font-size: 0.6em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-decoration: none;
                 }
             }
-            
         }
+        
     }
 }
