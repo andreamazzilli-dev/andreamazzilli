@@ -7,9 +7,20 @@
 
 .information {
     background-color: #054b62;
-    border-radius: 15px;
-    font-size: 2.5vh;
     color: #ffffff;
+
+    /* alternative color */
+    background-color: #00759c;
+    color: #000000;
+
+    /* another version yet*/
+    background-color: #096888;
+    color:#ffffff;
+
+    border-radius: 15px;
+
+    font-family: "JosefinSans","Raleway";
+    font-size: 2.5vh;
     padding: 15px;
     margin-top: 25px;
     margin-bottom: 25px;
