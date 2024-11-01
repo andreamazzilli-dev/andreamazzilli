@@ -2,7 +2,7 @@
 @import "progetti-mobile.css" screen and (max-width: 768px) and (orientation: landscape);
 @import "progetti-mobile.css" screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait);
 @import "progetti-desktop.css" screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape);
-@import "progetti-tablet.css" screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape);
+@import "progetti-tablet.css" screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape);
 @import "progetti-desktop.css" screen and (min-width: 1024px);
 
 .information {
@@ -11,5 +11,11 @@
     font-size: 2.5vh;
     color: #ffffff;
     padding: 15px;
-    margin: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    &.donation {
+        margin-top: 100px;
+    }
   }
