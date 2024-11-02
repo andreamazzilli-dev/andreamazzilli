@@ -109,10 +109,17 @@
             a  {
                 padding: 3px;
                 padding: 18px;
-                background-color: unset;
+                background: unset;
                 color: #FFFFFF;
                 /*border-bottom: 1px dotted #FFFFFF;*/
                 border-radius: 0px;
+
+                &:hover {
+                text-decoration: none;
+                /*border-bottom-style: solid;*/
+                background: linear-gradient(to right, #096888 0%, #054b62 100%);
+                padding: 18px;
+            }
             }
             span.label {
                 display: inline-flex;
@@ -127,17 +134,66 @@
                     align-self: center;
                 }
             }
-            a:hover {
-                text-decoration: none;
-                /*border-bottom-style: solid;*/
-                background: linear-gradient(to right, #096888 0%, #054b62 100%);
-                padding: 18px;
-            }
+            
             h4::after {
                 margin-top: 1rem; /* desktop */
                 margin-top: 1.6vw; /*responsive? */
                 margin-top: 3vh;
                 margin-top: 2%;
+            }
+        }
+        #contactSocialOld {
+            display: none;
+        }
+        #contactSocial {
+            ul {
+                width: 100%;
+                display: flex inline;
+                justify-content: space-around;
+                li {
+                    display: flex inline;
+                    flex-direction: column;
+
+                    /*border: 1px solid #ffffff;*/
+                    background-color: transparent;
+
+                    a {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        border-radius: 15px;
+                        font-size: 1.5vw;
+                        transition: 0.5s linear all;
+                        &:hover {
+                            background: #054b62;
+                            background: #096888;
+                        }
+                        &:focus,
+                        &:active {
+                            background: #054b62;
+                        }
+                        span {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            min-width: unset;
+                            width: fit-content;
+                            border-radius: 15px;
+                            background-color: transparent;
+
+                            i {
+                                font-size: 6em;
+                                font-size: 6vw;
+                            }
+                        }
+                        span.socialName {
+                            display: none;
+                        }
+                        span.url {
+                            display: none;
+                        }
+                    }
+                }
             }
         }
     }
@@ -189,8 +245,53 @@
         <a href="https://matrix.to/#/@andrewm:matrix.org">@andrewm:matrix.org</a>
     </section>
 
-
     <section id="contactSocial">     
+        <h4>Social Network & Fediverse</h4>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/andreamazzilli">
+                    <span class="label">
+                        <i class="bx bxl-linkedin"></i>
+                        <span class="socialName">LinkedIn</span>
+                    </span>
+                    <span class="url">https://www.linkedin.com/</span>
+                    andreamazzilli
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/andreamazzilli.dev">
+                    <span class="label">
+                        <i class="bx bxl-facebook"></i>
+                        <span class="socialName">Facebook</span>
+                    </span>
+                    <span class="url">https://www.facebook.com/</span>
+                    andreamazzilli.dev
+                </a>
+            </li>
+            <li>
+                <a href="https://www.Instagram.com/andreamazzilli.dev">
+                    <span class="label">
+                        <i class="bx bxl-instagram"></i>
+                        <span class="socialName">Instagram</span>
+                    </span>
+                    <span class="url">https://www.instagram.com/</span>
+                    andreamazzilli.dev
+                </a>
+            </li>
+            <li>
+                <a href="https://mastodon.social/@andreamazzilli">
+                    <span class="label">
+                        <i class="bx bxl-mastodon"></i>
+                        <span class="socialName">Mastodon</span>
+                    </span>
+                    <span class="url">https://mastodon.social/</span>
+                    andreamazzilli
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contactSocialOld">     
         <h4>Social Network & Fediverse</h4>
         <ul>
             <li>
