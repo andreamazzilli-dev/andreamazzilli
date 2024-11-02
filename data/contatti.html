@@ -6,10 +6,10 @@
         height: auto;
     }
     i {
-        border: 2px solid #ffffff;
+        /*border: 2px solid #ffffff;*/
         padding: 1px;
         border-radius: 6px;
-        line-height: unset;
+        line-height: unset !important;
         margin: 2px;
     }
     .other-color {
@@ -82,8 +82,10 @@
             display: grid;
             grid-template: 2fr / 2fr auto;
             grid-gap: 1vw;
+            h4 {
+                /*display: none;*/
+            }
             section {
-                
             }
             section#contactPhone {
                 grid-column: 1 / 2;
@@ -97,21 +99,29 @@
             ul {
                 li {
                     background-color: #054b62;
-                    border-radius: 10px;
+                    border-radius: 15px;
                     margin: 10px;
+                    display: flex;
+                    align-items: center;
+                    /*line-height: 2.5vw;*/
                 }
             }
             a  {
                 padding: 3px;
+                padding: 18px;
                 background-color: unset;
                 color: #FFFFFF;
-                border-bottom: 1px dotted #FFFFFF;
+                /*border-bottom: 1px dotted #FFFFFF;*/
                 border-radius: 0px;
             }
             span.label {
                 display: inline-flex;
                 text-align: unset;
                 background-color: #096888;
+                border-radius: 15px 0 0 15px;
+                padding: 15px;
+                min-width: 23%;
+                justify-content: space-between;
                 img {
                     aspect-ratio: 1 / 1;
                     align-self: center;
@@ -119,7 +129,9 @@
             }
             a:hover {
                 text-decoration: none;
-                border-bottom-style: solid;
+                /*border-bottom-style: solid;*/
+                background: linear-gradient(to right, #096888 0%, #054b62 100%);
+                padding: 18px;
             }
             h4::after {
                 margin-top: 1rem; /* desktop */
