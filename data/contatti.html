@@ -5,6 +5,16 @@
         min-height: 62vh;
         height: auto;
     }
+    i {
+        border: 2px solid #ffffff;
+        padding: 1px;
+        border-radius: 6px;
+        line-height: unset;
+        margin: 2px;
+    }
+    .other-color {
+        background-color: #096888;
+    }
     .contact {
         font-family: 'Raleway';
         font-size: 5vw; /* mobile */
@@ -13,6 +23,10 @@
         line-height: 12vw;
         text-align: right;
 
+        ul {
+            list-style: none;
+            margin-left: -40px;
+        }
         span.label {
             display: block;
             text-align: left;
@@ -28,9 +42,11 @@
             /* for mobile */
             padding: 2vw;
             background-color: #cadee5;
+            background-color: #096888;
             border-radius: 10px;
             color: black;
             color: #006182;
+            color: #cadee5;
             span {
                 display: none;
             }
@@ -109,33 +125,43 @@
 
     <section id="contactPhone">
         <h4>Email & Phone</h4>
-        <span class="label">
-            <img src="img/zest/mail.png" alt="">
-            Email
-        </span>
-        <a href="mailto:andrea.mazzilli@andrewm.net">andrea.mazzilli@andrewm.net</a> <br>
-        <div class="pgp" style="display: none;">
-            PGP Key <a href="">93701494</a>
-        </div>
-        <span class="label">
-            <img src="img/zest/phone.png" alt="">
-            Mobile
-        </span>
-        <a href="tel:+393933584120">(+39) 393-358 4120</a> <br>
-        <span class="label">
-            <img src="img/zest/whatsapp.png" alt="">
-            WhatsApp
-        </span>
-        <a href="https://wa.me/393933584120" aria-label="Chat on WhatsApp">Chat on WhatsApp</a> <br>
+        <ul>
+            <li>
+                <span class="label">
+                    <i class="bx bx-envelope"></i>
+                    Email
+                </span>
+                <a href="mailto:andrea.mazzilli@andrewm.net">andrea.mazzilli@andrewm.net</a> <br>
+                <div class="pgp" style="display: none;">
+                    PGP Key <a href="">93701494</a>
+                </div>
+            </li>
+            <li>
+                <span class="label">
+                    <i class="bx bx-phone"></i>
+                    Mobile
+                </span>
+                <a href="tel:+393933584120">(+39) 393-358 4120</a> <br>
+            </li>
+            <li>
+                <span class="label">
+                    <i class="bx bxl-whatsapp"></i>
+                    WhatsApp
+                </span>
+                <a href="https://wa.me/393933584120" aria-label="Chat on WhatsApp">Chat on WhatsApp</a> <br>
+            </li>
+        </ul>
     </section>
 
     <section id="contactIM">
         <h4>Instant Messaging</h4>
         <span class="label">
+            <i class="fa-brands fa-signal-messenger"></i>
             Signal:     
         </span>
         <a href="">andreamazzilli.87</a><br>
         <span class="label">
+            <i class="fa-brands fa-matrix"></i>
             Matrix: 
         </span>
         <a href="https://matrix.to/#/@andrewm:matrix.org">@andrewm:matrix.org</a>
@@ -145,21 +171,22 @@
     <section id="contactSocial">     
         <h4>Social Network & Fediverse</h4>
         <span class="label">
-            <img src="img/zest/linkedin.png" alt="">
+            <i class="bx bxl-linkedin"></i>
             LinkedIn 
         </span>
         <a href="https://www.linkedin.com/andreamazzilli"><span>https://www.linkedin.com/</span>andreamazzilli</a><br>
         <span class="label">
-            <img src="img/zest/facebook.png" alt="">
+            <i class="bx bxl-facebook"></i>
             Facebook 
         </span>
         <a href="https://www.facebook.com/andreamazzilli.dev"><span>https://www.facebook.com/</span>andreamazzilli.dev</a><br>
         <span class="label">
-            <img src="img/zest/instagram.png" alt="">
+            <i class="bx bxl-instagram"></i>
             Instagram 
         </span>
         <a href="https://www.Instagram.com/andreamazzilli.dev"><span>https://www.instagram.com/</span>andreamazzilli.dev</a><br>
         <span class="label">
+            <i class="bx bxl-mastodon"></i>
             Mastodon 
         </span>
         <a href="https://mastodon.social/@andreamazzilli"><span>https://mastodon.social/</span>andreamazzilli</a><br>
