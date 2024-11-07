@@ -74,6 +74,68 @@
         }
     }
 
+    #contactSocial {
+            ul {
+                width: 100%;
+                display: flex inline;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+                li {
+                    display: flex inline;
+                    flex-direction: column;
+                    width: 44vw;
+                    width: 50%;
+                    width: 70%;
+
+                    /*border: 1px solid #ffffff;*/
+                    background-color: transparent;
+
+                    a {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        border-radius: 15px;
+                        font-size: 3.5vw;
+                        font-size: 4.5vw;
+                        transition: 0.5s linear all;
+                        margin: 5px;
+                        justify-content: space-evenly;
+                        &:hover {
+                            background: #054b62;
+                            background: #096888;
+                            text-decoration: none;
+                        }
+                        &:focus,
+                        &:active {
+                            background: #054b62;
+                            text-decoration: none;
+                        }
+                        span {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            min-width: unset;
+                            width: fit-content;
+                            border-radius: 15px;
+                            background-color: transparent;
+
+                            i {
+                                font-size: 6em;
+                                font-size: 6vw;
+                            }
+                        }
+                        span.socialName {
+                            display: none;
+                        }
+                        span.url {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
     @media screen and (min-width: 1024px) and (orientation: landscape) {
         .contact {
             font-size: 2vw; /* desktop */
@@ -150,12 +212,13 @@
                 width: 100%;
                 display: flex inline;
                 justify-content: space-around;
+                flex-wrap: nowrap;
                 li {
                     display: flex inline;
                     flex-direction: column;
-
                     /*border: 1px solid #ffffff;*/
                     background-color: transparent;
+                    width: unset;
 
                     a {
                         display: flex;
@@ -164,6 +227,8 @@
                         border-radius: 15px;
                         font-size: 1.5vw;
                         transition: 0.5s linear all;
+                        margin: unset;
+                        justify-content: unset;
                         &:hover {
                             background: #054b62;
                             background: #096888;
@@ -202,7 +267,7 @@
 <div class="contact" id="contact">
 
     <section id="contactPhone">
-        <h4>Email & Phone</h4>
+        <h4>Email & Telefono</h4>
         <ul>
             <li>
                 <span class="label">
@@ -217,7 +282,7 @@
             <li>
                 <span class="label">
                     <i class="bx bx-phone"></i>
-                    Mobile
+                    Cellulare
                 </span>
                 <a href="tel:+393933584120">(+39) 393-358 4120</a>
             </li>
@@ -226,7 +291,7 @@
                     <i class="bx bxl-whatsapp"></i>
                     WhatsApp
                 </span>
-                <a href="https://wa.me/393933584120" aria-label="Chat on WhatsApp">Chat on WhatsApp</a>
+                <a href="https://wa.me/393933584120" aria-label="Chat on WhatsApp">Chatta su WhatsApp</a>
             </li>
         </ul>
     </section>
@@ -246,7 +311,7 @@
     </section>
 
     <section id="contactSocial">     
-        <h4>Social Network & Fediverse</h4>
+        <h4>Social Network & Fediverso</h4>
         <ul>
             <li>
                 <a href="https://www.linkedin.com/andreamazzilli">
@@ -292,7 +357,7 @@
     </section>
 
     <section id="contactSocialOld" style="display: none;">     
-        <h4>Social Network & Fediverse</h4>
+        <h4>Social Network & Fediverso</h4>
         <ul>
             <li>
                 <span class="label">
