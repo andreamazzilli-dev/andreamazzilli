@@ -6,7 +6,7 @@ header {
     display: flex;
     justify-content: center;
     .logoHomeText {
-        display: none;
+        /*display: none;*/
     }
 
 }
