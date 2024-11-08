@@ -85,7 +85,7 @@
                         transition: 0.5s linear all;
 
                         &:hover {
-                            background: var(--main-light-color);
+                            background: var(--main-lighten-color);
                         }
 
                         &:focus,
@@ -111,6 +111,7 @@
                             i {
                                 font-size: 6em;
                                 font-size: 6vw;
+                                font-size: 5vw;
                             }
                         }
                     }
