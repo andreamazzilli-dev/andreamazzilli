@@ -64,32 +64,26 @@
         ul {
             margin-left: -40px;
             width: 100%;
-
             display: flex inline;
             justify-content: space-around;
             flex-wrap: wrap;
-            
             list-style: none;
 
             li {
                 width: 44vw;
                 width: 50%;
                 width: 70%;
-                
                 display: flex inline;
                 flex-direction: column;
-
                 /*border: 1px solid #ffffff;*/
                 background-color: transparent;
 
                 a {
                     margin: 5px;
-
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                     justify-content: space-evenly;
-                    
                     border-radius: 15px;
                     font-size: 3.5vw;
                     font-size: 4.5vw;

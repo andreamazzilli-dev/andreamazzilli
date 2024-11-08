@@ -3,7 +3,6 @@
         display: grid;
         grid-template: 2fr / 2fr auto;
         grid-gap: 1vw;
-
         font-size: 2vw;
         text-align: unset;
         line-height: 3.5vw;
@@ -25,7 +24,6 @@
                     margin: 10px;
                     display: flex;
                     align-items: center;
-
                     background-color: #054b62;
                     border-radius: 15px;
                     /*line-height: 2.5vw;*/
@@ -38,20 +36,18 @@
                         /*border-bottom: 1px dotted #FFFFFF;*/
                         border-radius: 0px;
                         &:hover {
-                            text-decoration: none;
+                            padding: 18px;
                             /*border-bottom-style: solid;*/
                             background: linear-gradient(to right, #096888 5%, #054b62 100%);
-                            padding: 18px;
+                            text-decoration: none;
                         }
                     }
                     span.label {
                         padding: 15px;
                         min-width: 23%;
-
                         display: inline-flex;
                         text-align: unset;
                         justify-content: space-between;
-
                         background-color: #096888;
                         border-radius: 15px 0 0 15px;
                     }
@@ -67,28 +63,23 @@
 
             ul {
                 width: 100%;
-
                 display: flex inline;
                 justify-content: space-around;
                 flex-wrap: nowrap;
 
                 li {
                     width: unset;
-
                     display: flex inline;
                     flex-direction: column;
-
                     /*border: 1px solid #ffffff;*/
                     background-color: transparent;
 
                     a {
                         margin: unset;
-
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         justify-content: unset;
-
                         border-radius: 15px;
                         font-size: 1.5vw;
                         transition: 0.5s linear all;
@@ -104,11 +95,11 @@
                         }
 
                         span {
+                            min-width: unset;
+                            width: fit-content;
                             display: flex;
                             flex-direction: column;
                             align-items: center;
-                            min-width: unset;
-                            width: fit-content;
                             border-radius: 15px;
                             background-color: transparent;
 
