@@ -28,7 +28,7 @@
         padding: 2vw;
         background-color: var(--main-light-color);
         border-radius: 10px;
-        color: var(--fg-color);
+        color: var(--fg-color-white);
         &:hover {
             text-decoration: underline;
         }
