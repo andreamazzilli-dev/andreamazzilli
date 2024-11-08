@@ -12,6 +12,8 @@ i {
     margin: 2px;
 }
 .contact {
+    margin: 0 auto;
+    width: 90%;
     font-family: 'Raleway';
     font-family: 'JosefinSans';
     color: var(--fg-color-white);
