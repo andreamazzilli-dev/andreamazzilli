@@ -36,12 +36,21 @@
     src: url("../fonts/JosefinSans.ttf");
 }
 
+:root {
+    --main-color: #006182;
+    --main-dimmed-color: #054b62;
+    --main-light-color: #096888;
+    --fg-color: #cadee5;
+    --fg-color-white: #ffffff;
+}
+
 html, body {
     margin: 0;
 }
 
 body {
-    background-color: #006182;
+
+    background-color: var(--main-color);
     font-family: sans-serif;
     font-weight: 300;
 }

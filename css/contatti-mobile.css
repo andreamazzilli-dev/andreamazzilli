@@ -16,7 +16,7 @@
             margin-top: 2.6vh;
             margin-top: 7%;
             height: 3px;
-            background-color: #FFFFFF;
+            background-color: var(--fg-color-white);
             padding-right: 30px;
         }
     }
@@ -27,11 +27,11 @@
         /* for mobile */
         padding: 2vw;
         background-color: #cadee5;
-        background-color: #096888;
+        background-color: var(--main-light-color);
         border-radius: 10px;
         color: black;
         color: #006182;
-        color: #cadee5;
+        color: var(--fg-color);
         &:hover {
             text-decoration: underline;
         }
@@ -91,12 +91,12 @@
 
                     &:hover {
                         background: #054b62;
-                        background: #096888;
+                        background-color: var(--main-light-color);
                         text-decoration: none;
                     }
                     &:focus,
                     &:active {
-                        background: #054b62;
+                        background: var(--main-dimmed-color);
                         text-decoration: none;
                     }
 

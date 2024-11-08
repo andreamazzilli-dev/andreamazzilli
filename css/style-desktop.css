@@ -19,18 +19,18 @@ header {
   .logoTextLabel {
     padding: 5px;
     border-radius: 10px;
-    background-color: #cadee5;
+    background-color: var(--fg-color);
     color: #006182 !important;
     align-content: center;
   }
   .logoText {
-    color: #cadee5;
+    color: var(--fg-color);
     font-size: 3em;
     font-weight: 500;
   }
   .logoSeparator {
     padding: 5px;
-    color: #cadee5;
+    color: var(--fg-color);
     font-size: 3em;
     font-weight: 500;
     align-content: center;
@@ -38,7 +38,7 @@ header {
   .logoHomeText {
     padding: 5px;
     padding-left: 0;
-    color: #cadee5;
+    color: var(--fg-color);
     font-size: 3em;
     font-weight: 500;
   }

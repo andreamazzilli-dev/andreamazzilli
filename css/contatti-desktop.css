@@ -24,7 +24,7 @@
                     margin: 10px;
                     display: flex;
                     align-items: center;
-                    background-color: #054b62;
+                    background-color: var(--main-dimmed-color);
                     border-radius: 15px;
                     /*line-height: 2.5vw;*/
 
@@ -48,7 +48,7 @@
                         display: inline-flex;
                         text-align: unset;
                         justify-content: space-between;
-                        background-color: #096888;
+                        background-color: var(--main-light-color);
                         border-radius: 15px 0 0 15px;
                     }
                 }
@@ -86,7 +86,7 @@
 
                         &:hover {
                             background: #054b62;
-                            background: #096888;
+                            background: var(--main-light-color);
                         }
 
                         &:focus,

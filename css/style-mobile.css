@@ -18,21 +18,21 @@ header {
       padding: 5px;
       border-radius: 10px;
       background-color: #cadee5;
-      background-color: #ffffff;
+      background-color: var(--fg-color-white);
       color: #006182 !important;
       /* to show on drawer */
       z-index: 101;
     }
     .logoText {
       display: unset;
-      color: #cadee5;
+      color: var(--fg-color);
       font-size: 3em;
       font-weight: 500;
     }
     .logoSeparator {
       display: none;
       padding: 5px;
-      color: #cadee5;
+      color: var(--fg-color);
       font-size: 3em;
       font-weight: 500;
     }
@@ -42,7 +42,7 @@ header {
       flex-grow: 3;
       align-content: center;
       color: #cadee5;
-      color: #ffffff;
+      color: var(--fg-color-white);
       /*font-size: 2em;*/
       font-size: 3em;
       font-weight: 500;
@@ -64,7 +64,7 @@ header {
   position: static;
   align-content: center;
   padding: 12px;
-  color: #ffffff;
+  color: var(--fg-color-white);
   font-size: 2.5em;
   /*border: 1px solid green;*/
 }
@@ -95,7 +95,7 @@ nav > ul > li {
   a:hover,
   a:focus,
   a:active {
-      background-color: #cadee5;
+      background-color: var(--fg-color);
       color: #006182;
   }
 }

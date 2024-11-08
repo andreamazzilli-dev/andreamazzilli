@@ -17,5 +17,5 @@ i {
 .contact {
     font-family: 'Raleway';
     font-family: 'JosefinSans';
-    color: #FFFFFF;
+    color: var(--fg-color-white);
 }
