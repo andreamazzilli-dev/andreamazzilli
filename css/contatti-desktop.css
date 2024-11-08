@@ -1,24 +1,20 @@
 @media screen and (min-width: 1024px) and (orientation: landscape) {
     .contact {
-        font-size: 2vw; /* desktop */
-        line-height: 3.5vw;
-        text-align: unset;
-        display: grid;
-        grid-template: 2fr / 2fr auto;
-        grid-gap: 1vw;
+        
+        
         h4 {
             /*display: none;*/
         }
         section {
         }
         section#contactPhone {
-            grid-column: 1 / 2;
+            
         }
         section#contactIM {
-            grid-column: 2 / 3;
+            
         }
         section#contactSocial {
-            grid-column: 1 / 3;
+            
         }
         ul {
             li {
@@ -60,10 +56,7 @@
         }
         
         h4::after {
-            margin-top: 1rem; /* desktop */
-            margin-top: 1.6vw; /*responsive? */
-            margin-top: 3vh;
-            margin-top: 2%;
+            
         }
     }
     #contactSocialOld {
@@ -71,53 +64,31 @@
     }
     #contactSocial {
         ul {
-            width: 100%;
-            display: flex inline;
-            justify-content: space-around;
-            flex-wrap: nowrap;
+            
             li {
-                display: flex inline;
-                flex-direction: column;
-                /*border: 1px solid #ffffff;*/
-                background-color: transparent;
-                width: unset;
+                
 
                 a {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    border-radius: 15px;
-                    font-size: 1.5vw;
-                    transition: 0.5s linear all;
-                    margin: unset;
-                    justify-content: unset;
+                    
                     &:hover {
-                        background: #054b62;
-                        background: #096888;
+                        
                     }
                     &:focus,
                     &:active {
-                        background: #054b62;
+                        
                     }
                     span {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        min-width: unset;
-                        width: fit-content;
-                        border-radius: 15px;
-                        background-color: transparent;
+                        
 
                         i {
-                            font-size: 6em;
-                            font-size: 6vw;
+                            
                         }
                     }
                     span.socialName {
-                        display: none;
+                        
                     }
                     span.url {
-                        display: none;
+                        
                     }
                 }
             }

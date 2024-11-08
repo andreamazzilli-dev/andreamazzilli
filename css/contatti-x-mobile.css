@@ -1,0 +1,53 @@
+.contact {
+    font-size: 5vw;    
+    line-height: 12vw;
+    text-align: right;
+
+    h4 {
+        display: flex;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        &::after {
+            content: "";
+            flex: 1;
+            margin-left: 1rem;
+            margin-top: 1.3rem; /* mobile */
+            margin-top: 2.6vh;
+            margin-top: 7%;
+            height: 3px;
+            background-color: #FFFFFF;
+            padding-right: 30px;
+        }
+    }
+    section#contactPhone {
+        ul {
+            margin-left: -40px;
+            list-style: none;
+            li {
+                a {
+
+                }
+                span {
+
+                }
+            }
+        }
+
+    }
+    section#contactIM {
+
+    }
+    section#contactSocial {
+        ul {
+            margin-left: -40px;
+            list-style: none;
+            li {
+                a {
+                    span {
+                        
+                    }
+                }
+            }
+        }
+    }
+}

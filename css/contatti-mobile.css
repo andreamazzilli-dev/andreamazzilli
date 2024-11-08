@@ -1,15 +1,8 @@
 .contact {
-    font-family: 'Raleway';
-    font-family: 'JosefinSans';
-    font-size: 5vw; /* mobile */
-    color: #FFFFFF;
-    /* for mobile */
-    line-height: 12vw;
-    text-align: right;
+
 
     ul {
-        list-style: none;
-        margin-left: -40px;
+        
     }
     span.label {
         display: block;
@@ -40,20 +33,10 @@
         text-decoration: underline;
     }
     h4 {
-        display: flex;
-        margin-top: 3vh;
-        margin-bottom: 3vh;
+        
     }
     h4::after {
-        content: "";
-        flex: 1;
-        margin-left: 1rem;
-        margin-top: 1.3rem; /* mobile */
-        margin-top: 2.6vh;
-        margin-top: 7%;
-        height: 3px;
-        background-color: #FFFFFF;
-        padding-right: 30px;
+
     }
 }
 
