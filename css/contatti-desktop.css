@@ -32,7 +32,7 @@
                         padding: 3px;
                         padding: 18px;
                         background: unset;
-                        color: var(--fg-color-white);
+                        color: var(--fg-color);
                         /*border-bottom: 1px dotted #FFFFFF;*/
                         border-radius: 0px;
                         &:hover {

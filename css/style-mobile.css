@@ -17,7 +17,7 @@ header {
     .logoTextLabel {
       padding: 5px;
       border-radius: 10px;
-      background-color: var(--fg-color-white);
+      background-color: var(--fg-color);
       color: #006182 !important;
       /* to show on drawer */
       z-index: 101;
@@ -40,7 +40,7 @@ header {
       padding-left: 0;
       flex-grow: 3;
       align-content: center;
-      color: var(--fg-color-white);
+      color: var(--fg-color);
       /*font-size: 2em;*/
       font-size: 3em;
       font-weight: 500;
@@ -62,7 +62,7 @@ header {
   position: static;
   align-content: center;
   padding: 12px;
-  color: var(--fg-color-white);
+  color: var(--fg-color);
   font-size: 2.5em;
   /*border: 1px solid green;*/
 }
