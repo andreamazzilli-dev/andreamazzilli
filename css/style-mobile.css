@@ -17,7 +17,6 @@ header {
     .logoTextLabel {
       padding: 5px;
       border-radius: 10px;
-      background-color: #cadee5;
       background-color: var(--fg-color-white);
       color: #006182 !important;
       /* to show on drawer */
@@ -41,7 +40,6 @@ header {
       padding-left: 0;
       flex-grow: 3;
       align-content: center;
-      color: #cadee5;
       color: var(--fg-color-white);
       /*font-size: 2em;*/
       font-size: 3em;

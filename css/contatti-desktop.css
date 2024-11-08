@@ -32,7 +32,7 @@
                         padding: 3px;
                         padding: 18px;
                         background: unset;
-                        color: #FFFFFF;
+                        color: var(--fg-color-white);
                         /*border-bottom: 1px dotted #FFFFFF;*/
                         border-radius: 0px;
                         &:hover {
@@ -85,13 +85,12 @@
                         transition: 0.5s linear all;
 
                         &:hover {
-                            background: #054b62;
                             background: var(--main-light-color);
                         }
 
                         &:focus,
                         &:active {
-                            background: #054b62;
+                            background: var(--main-dimmed-color);
                         }
 
                         span {
