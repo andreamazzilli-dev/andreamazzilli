@@ -1,0 +1,126 @@
+.contact {
+    font-size: 5vw;    
+    text-align: right;
+    line-height: 12vw;
+
+    h4 {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        display: flex;
+
+        &::after {
+            content: "";
+            flex: 1;
+            margin-left: 1rem;
+            margin-top: 1.3rem; /* mobile */
+            margin-top: 2.6vh;
+            margin-top: 7%;
+            height: 3px;
+            background-color: #FFFFFF;
+            padding-right: 30px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 600;
+        /* for mobile */
+        padding: 2vw;
+        background-color: #cadee5;
+        background-color: #096888;
+        border-radius: 10px;
+        color: black;
+        color: #006182;
+        color: #cadee5;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    section#contactPhone {
+
+        ul {
+            margin-left: -40px;
+            list-style: none;
+            li {
+                a {
+
+                }
+                span.label {
+                    display: block;
+                    text-align: left;
+                    font-family: "Raleway";
+                }
+            }
+        }
+    }
+
+    section#contactIM {
+
+    }
+
+    section#contactSocial {
+
+        ul {
+            margin-left: -40px;
+            width: 100%;
+            display: flex inline;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            list-style: none;
+
+            li {
+                width: 44vw;
+                width: 50%;
+                width: 70%;
+                display: flex inline;
+                flex-direction: column;
+                /*border: 1px solid #ffffff;*/
+                background-color: transparent;
+
+                a {
+                    margin: 5px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    border-radius: 15px;
+                    font-size: 3.5vw;
+                    font-size: 4.5vw;
+                    transition: 0.5s linear all;
+
+                    &:hover {
+                        background: #054b62;
+                        background: #096888;
+                        text-decoration: none;
+                    }
+                    &:focus,
+                    &:active {
+                        background: #054b62;
+                        text-decoration: none;
+                    }
+
+                    span {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        min-width: unset;
+                        width: fit-content;
+                        border-radius: 15px;
+                        background-color: transparent;
+                        &.socialName {
+                            display: none;
+                        }
+                        &.url {
+                            display: none;
+                        }
+                        i {
+                            font-size: 6em;
+                            font-size: 6vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
