@@ -22,11 +22,38 @@
 
             ul {
                 li {
+                    margin: 10px;
+                    display: flex;
+                    align-items: center;
+
+                    background-color: #054b62;
+                    border-radius: 15px;
+                    /*line-height: 2.5vw;*/
+
                     a {
-
+                        padding: 3px;
+                        padding: 18px;
+                        background: unset;
+                        color: #FFFFFF;
+                        /*border-bottom: 1px dotted #FFFFFF;*/
+                        border-radius: 0px;
+                        &:hover {
+                            text-decoration: none;
+                            /*border-bottom-style: solid;*/
+                            background: linear-gradient(to right, #096888 5%, #054b62 100%);
+                            padding: 18px;
+                        }
                     }
-                    span {
+                    span.label {
+                        padding: 15px;
+                        min-width: 23%;
 
+                        display: inline-flex;
+                        text-align: unset;
+                        justify-content: space-between;
+
+                        background-color: #096888;
+                        border-radius: 15px 0 0 15px;
                     }
                 }
             }

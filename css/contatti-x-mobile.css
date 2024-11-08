@@ -20,6 +20,23 @@
             padding-right: 30px;
         }
     }
+
+    a {
+        text-decoration: none;
+        font-weight: 600;
+        /* for mobile */
+        padding: 2vw;
+        background-color: #cadee5;
+        background-color: #096888;
+        border-radius: 10px;
+        color: black;
+        color: #006182;
+        color: #cadee5;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     section#contactPhone {
 
         ul {
@@ -29,16 +46,19 @@
                 a {
 
                 }
-                span {
-
+                span.label {
+                    display: block;
+                    text-align: left;
+                    font-family: "Raleway";
                 }
             }
         }
-
     }
+
     section#contactIM {
 
     }
+
     section#contactSocial {
 
         ul {
@@ -87,7 +107,23 @@
                     }
 
                     span {
-                        
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        min-width: unset;
+                        width: fit-content;
+                        border-radius: 15px;
+                        background-color: transparent;
+                        &.socialName {
+                            display: none;
+                        }
+                        &.url {
+                            display: none;
+                        }
+                        i {
+                            font-size: 6em;
+                            font-size: 6vw;
+                        }
                     }
                 }
             }
