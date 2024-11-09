@@ -3,12 +3,12 @@
         width: 90%;
         display: grid;
         grid-template: 2fr / 2fr auto;
-        grid-template-rows: 1fr 1fr;
+        /*grid-template-rows: 1fr 1fr;*/
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1vw;
         font-size: 2vw;
         text-align: unset;
-        line-height: 3.5vw;
+        line-height: 1.5vw;
         
         h4 {
 
@@ -30,7 +30,7 @@
             grid-column: 1 / 4;
 
             ul {
-                margin: 0 auto;
+                margin: 10vh auto;
                 margin-left: -40px;
                 width: 90%;
 
@@ -129,6 +129,7 @@
                         justify-content: unset;
                         border-radius: 15px;
                         font-size: 1.5vw;
+                        line-height: 3.5vw;
                         
                         &:hover {
                             background: var(--main-lighten-color);
