@@ -62,19 +62,21 @@
         &:hover,
         .cardSelected {
             transform: scale(1.1);
-            /*transition: all 1s ease-in-out;
-            height: 350px;
+            transition: all 1s ease-in-out;
+            /*height: 350px;
             height: 51vh;
             height: 54vh;
             height: 55vw;
             height: clamp(420px, 37vh, 420px);
             max-height: unset;*/
+            height: 420px;
             box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.7);
             /*background-color: #cadee5;
             color: #111111;*/
-
-            animation: openCard linear 2s;
+            /*
+            animation: openCard linear 1s;
             animation-fill-mode: forwards;
+            */
         }
         &:hover a.cardLink {
             color: #ffffff;
