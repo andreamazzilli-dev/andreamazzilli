@@ -3,66 +3,66 @@
     font-size: clamp( 19px, 2.4vw, 2.4vw) !important;
 }
 .project {
+    margin: 0 auto;
+    margin: 0 6vw 0 6vw;
+    width: 80%;
+    width: 88vw;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    opacity: 0;
+    
     /*
     text-align: center;
     font-family: "Montserrat";
     text-shadow: none;
     color: #2c2c2c;
     */
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 0 auto;
-    opacity: 0;
-
-    width: 88vw;
-    margin: 0 6vw 0 6vw;
 
     .card {
-        background-color: rgba(255,255,255,1);
-        background-color: #cadee5;
-        /*background-color: #006182;*/
-        background-color: #054b62;
-        color: #ffffff;
+        margin: 10px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 30px;
         width: 300px;
         height: 350px;
-        box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.4);
-        box-shadow: 2px 3px 7px 1px rgba(0,0,0,0.1);
-        margin: 10px;
-        transition: all 0.3s ease-in-out;
-        padding: 30px;
-        margin: 0 auto;
-    
         height: calc(350px / 2);
         height: 130px;
         height: 13vh;
-        width: 330px; /*alternative widht */
-        width: 400px;
-        width: 20.84vw;
-        overflow: hidden;
-    
-        display: flex;
-        flex-direction: column;
-        /*align-items: center;*/
-        border-radius: 20px;
-        font-size: 1rem;
-
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 90%;
-        width: 65vw;
-        width: 71vw;
         /*height: 24vh;
         height: 22vh;*/
         min-height: 219px;
         /*max-height: 219px;*/
         /*height: clamp(219px, 24vh, 400px);*/
+        width: 330px; /*alternative width */
+        width: 400px;
+        width: 20.84vw;
+        width: 90%;
+        width: 65vw;
+        width: 71vw;
+        
+        background-color: rgba(255,255,255,1);
+        background-color: #cadee5;
+        /*background-color: #006182;*/
+        background-color: #054b62;
+        border-radius: 20px;
+        box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.4);
+        box-shadow: 2px 3px 7px 1px rgba(0,0,0,0.1);
+        color: #ffffff;
+        
+        display: flex;
+        flex-direction: column;
+        /*align-items: center;*/
+        
+        font-size: 1rem;
+        overflow: hidden;
+
+        transition: all 0.3s ease-in-out;
 
         &:hover,
         .cardSelected {
-            transform: scale(1.1);
-            transition: all 1s ease-in-out;
             /*height: 350px;
             height: 51vh;
             height: 54vh;
@@ -73,6 +73,8 @@
             box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.7);
             /*background-color: #cadee5;
             color: #111111;*/
+            transform: scale(1.1);
+            transition: all 1s ease-in-out;
             /*
             animation: openCard linear 1s;
             animation-fill-mode: forwards;
@@ -87,34 +89,35 @@
             transition: all 1s ease-in-out;
         }
         .preview {
-            /*border: 1px solid green;*/
-            height: 50%;
+            margin: -30px;
             padding-top: 15px;
             padding-left: 15px;
             padding-right: 15px;
             /*padding-bottom: 15px;*/
-            margin: -30px;
+            height: 50%;
             min-height: calc(350px / 2);
             min-height: 150px;
             min-height: 173px;
             min-height: 23vh;
             min-height: 207px;
-            transition: all 1s ease-in-out;
-        
+            /*border: 1px solid green;*/
+            background-color: #cadee5;
+            
             display: flex;
             align-items: center;
-            background-color: #cadee5;
+
+            transition: all 1s ease-in-out;
             a {
                 margin-left: auto;
                 margin: auto;
                 img {
-                    /*width: 80%; */
-                    /*padding: 15px;*/
                     margin: auto;
-                    display: block;
+                    /*padding: 15px;*/
+                    /*width: 80%; */
+                    width: 100%;
                     /*height: 15%;*/
                     /*border: 1px solid red;*/
-                    width: 100%;
+                    display: block;
                 }
                 a:hover {
                     background-color: transparent;
@@ -130,15 +133,15 @@
             margin-top: 30px;
         }
         a.cardLink {
-            color: #ffffff;
-            width: 70px;
-            width: max-content;
-            padding: 10px;
             margin-left: 16vw;
             margin-top: 10px;
-            text-decoration: none;
+            padding: 10px;
+            width: 70px;
+            width: max-content;
             border-radius: 6px;
             align-self: flex-end;
+            color: #ffffff;
+            text-decoration: none;
         }
         &:hover a {
             color: #000000;
@@ -165,14 +168,14 @@
 
 @keyframes fadeIn {
     from {
-    opacity: 0;
-    display: none;
-    /*width: 0px;*/
+        opacity: 0;
+        display: none;
+        /*width: 0px;*/
     }
     to {
-    opacity: 1;
-    display: unset;
-    /*width: 100%;*/
+        opacity: 1;
+        display: unset;
+        /*width: 100%;*/
     }
 }
 
