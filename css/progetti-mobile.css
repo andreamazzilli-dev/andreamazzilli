@@ -53,24 +53,28 @@
         width: 90%;
         width: 65vw;
         width: 71vw;
-        height: 24vh;
-        height: 22vh;
+        /*height: 24vh;
+        height: 22vh;*/
         min-height: 219px;
-        max-height: 219px;
+        /*max-height: 219px;*/
         /*height: clamp(219px, 24vh, 400px);*/
+
         &:hover,
         .cardSelected {
             transform: scale(1.1);
-            transition: all 1s ease-in-out;
+            /*transition: all 1s ease-in-out;
             height: 350px;
             height: 51vh;
             height: 54vh;
             height: 55vw;
             height: clamp(420px, 37vh, 420px);
-            max-height: unset;
+            max-height: unset;*/
             box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.7);
             /*background-color: #cadee5;
             color: #111111;*/
+
+            animation: openCard linear 2s;
+            animation-fill-mode: forwards;
         }
         &:hover a.cardLink {
             color: #ffffff;
@@ -158,14 +162,27 @@
 
 
 @keyframes fadeIn {
-from {
-  opacity: 0;
-  display: none;
-  /*width: 0px;*/
+    from {
+    opacity: 0;
+    display: none;
+    /*width: 0px;*/
+    }
+    to {
+    opacity: 1;
+    display: unset;
+    /*width: 100%;*/
+    }
 }
-to {
-  opacity: 1;
-  display: unset;
-  /*width: 100%;*/
-}
+
+@keyframes openCard {
+    from {
+        height: 219px;
+        min-height: 219px;
+        max-height: 219px;
+    }
+    to {
+        height: 420px;
+        min-height: unset;
+        max-height: 420px;
+    }
 }
