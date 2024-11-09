@@ -41,15 +41,15 @@ services:
   #  volumes:
   #    - ..:/var/www/html/andreamazzilli/
 
-  php:
-    build:
-      dockerfile: Dockerfile
-    image: php:8.3
+  #php:
+  #  build:
+  #    dockerfile: Dockerfile
+  #  image: php:8.3
     #ports:
     #  - 8000:80
-    volumes:
-      - ..:/var/www/html/andreamazzilli:cached
-      - ../../cassetto/cassetto:/var/www/html/andreamazzilli/cassetto:cached
+  #  volumes:
+  #    - ..:/var/www/html/andreamazzilli:cached
+  #    - ../../cassetto/cassetto:/var/www/html/andreamazzilli/cassetto:cached
 
   #db:
   #  image: mariadb:10.4
