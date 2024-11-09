@@ -58,6 +58,34 @@
 
     section#contactIM {
 
+        a {
+            margin: 5px;
+            padding: 15px;
+
+            height: fit-content;
+            display: inline-flex;
+
+            text-decoration: none;
+            transition: 1s linear all;
+
+            &:hover {
+                background-color: var(--main-lighten-color);
+            }
+            &:focus,
+            &:active {
+                background-color: var(--main-dimmed-color);
+            }
+
+            img {
+                width: 3vw;
+                padding: 6px;
+                filter: invert(100%) opacity(80%);
+                transition: 1s linear all;
+                &:hover {
+                    filter: invert(100%) opacity(1);
+                }
+            }
+        }
     }
 
     section#contactSocial {
