@@ -6,6 +6,12 @@
 @import "progetti-desktop.css" screen and (min-width: 1024px);
 
 .information {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 15px;
+
     background-color: #054b62;
     color: #ffffff;
 
@@ -21,13 +27,8 @@
 
     font-family: "JosefinSans","Raleway";
     font-size: 2.5vh;
-    padding: 15px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
-
     font-size: 1.4vw;
+
     &.donation {
         margin-top: 100px;
     }
