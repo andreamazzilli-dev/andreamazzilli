@@ -136,6 +136,7 @@
 
     .cardOpened {
     height: 46vh;
+    max-height: 337px;
 }
    
 }
