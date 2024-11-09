@@ -1,7 +1,8 @@
 .contact {
     font-size: 5vw;    
-    text-align: right;
+    text-align: center;
     line-height: 12vw;
+    /*transition: 1s linear all;*/
 
     h4 {
         margin-top: 3vh;
@@ -45,7 +46,15 @@
             list-style: none;
             li {
                 a {
-
+                    padding: 15px;
+                    &:hover {
+                        background-color: var(--main-lighten-color);
+                        transition: 1s linear all;
+                    }
+                    &:focus {
+                        background-color: var(--main-dimmed-color);
+                        transition: 1s linear all;
+                    }
                 }
                 span.label {
                     display: block;
@@ -66,22 +75,23 @@
             display: inline-flex;
 
             text-decoration: none;
-            transition: 1s linear all;
-
+            
             &:hover {
                 background-color: var(--main-lighten-color);
+                transition: 1s linear all;
             }
             &:focus,
             &:active {
                 background-color: var(--main-dimmed-color);
+                transition: 1s linear all;
             }
 
             img {
-                width: 3vw;
-                padding: 6px;
+                width: 10vw;
+                padding: 5px;
                 filter: invert(100%) opacity(80%);
-                transition: 1s linear all;
                 &:hover {
+                    transition: 1s linear all;
                     filter: invert(100%) opacity(1);
                 }
             }
@@ -117,16 +127,17 @@
                     border-radius: 15px;
                     font-size: 3.5vw;
                     font-size: 4.5vw;
-                    transition: 0.5s linear all;
-
+                    
                     &:hover {
                         background: #054b62;
                         background-color: var(--main-light-color);
+                        transition: 0.5s linear all;
                         text-decoration: none;
                     }
                     &:focus,
                     &:active {
                         background: var(--main-dimmed-color);
+                        transition: 0.5s linear all;
                         text-decoration: none;
                     }
 
