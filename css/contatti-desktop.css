@@ -49,6 +49,7 @@
                         color: var(--fg-color);
                         /*border-bottom: 1px dotted #FFFFFF;*/
                         border-radius: 0px;
+                        font-size: 2vw;
                         &:hover {
                             padding: 18px;
                             /*border-bottom-style: solid;*/
