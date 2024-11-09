@@ -18,6 +18,11 @@
             height: 3px;
             background-color: var(--fg-color);
             padding-right: 30px;
+
+            height: 1px;
+            margin-top: unset;
+            display: flex;
+            align-self: center;
         }
     }
 
