@@ -51,7 +51,7 @@
                     <a href="#" onclick="javascript:getData('portfolio')" name="progetti" id="progetti">Portfolio</a>
                 </li>
                 <li>
-                    <a href="#" onclick="javascript:getData('contatti')" name="contatti" id="contatti">Contatti</a>
+                    <a href="#contatti" onclick="javascript:getData('contatti')" name="contatti" id="contatti">Contatti</a>
                 </li>
             </ul>
                 <hr>
@@ -73,7 +73,7 @@
     </main>
 
     <script>
-        
+
         function updateText() {
             const viewportWidth = window.visualViewport.width;
             const viewportHeight = window.visualViewport.height;
@@ -87,6 +87,16 @@
         //document.addEventListener('resize', updateText );
 
         //window.onresize = updateText;
+
+        var hash = window.location.hash.substr(1);
+
+        window.addEventListener('load', function() {
+            if (hash != '') {
+                getData(hash);
+            } else {
+                getData(home);
+            }
+        });
 
 
     </script>
