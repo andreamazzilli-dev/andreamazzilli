@@ -54,6 +54,7 @@
                             padding: 18px;
                             /*border-bottom-style: solid;*/
                             background: linear-gradient(to right, #096888 5%, #054b62 100%);
+                            transition: 1s linear all;
                             text-decoration: none;
                         }
                     }
@@ -81,23 +82,24 @@
                 display: inline-flex;
 
                 text-decoration: none;
-                transition: 1s linear all;
-
+                
                 &:hover {
                     background-color: var(--main-lighten-color);
+                    transition: 1s linear all;
                 }
                 &:focus,
                 &:active {
                     background-color: var(--main-dimmed-color);
+                    transition: 1s linear all;
                 }
 
                 img {
                     width: 3vw;
                     padding: 6px;
                     filter: invert(100%) opacity(80%);
-                    transition: 1s linear all;
                     &:hover {
                         filter: invert(100%) opacity(1);
+                        transition: 1s linear all;
                     }
                 }
             }
@@ -126,15 +128,16 @@
                         justify-content: unset;
                         border-radius: 15px;
                         font-size: 1.5vw;
-                        transition: 0.5s linear all;
-
+                        
                         &:hover {
                             background: var(--main-lighten-color);
+                            transition: 0.5s linear all;
                         }
 
                         &:focus,
                         &:active {
                             background: var(--main-dimmed-color);
+                            transition: 0.5s linear all;
                         }
 
                         span {
