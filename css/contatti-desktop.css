@@ -64,6 +64,23 @@
         }
         section#contactIM {
             grid-column: 3 / 4;
+
+            a {
+                margin: 5px;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: var(--main-lighten-color);
+                }
+
+                img {
+                    filter: invert(100%) opacity(80%);
+                    transition: 1s linear all;
+                    &:hover {
+                        filter: invert(100%) opacity(1);
+                    }
+                }
+            }
         }
         section#contactSocial {
             grid-column: 1 / 4;
