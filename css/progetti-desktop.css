@@ -1,3 +1,41 @@
+.information {
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+    &.donation {
+        margin-top: 18vh;
+        font-size: 2vw;
+        text-align: center;
+
+        transition: 1s linear all;
+
+        div.donationLink {
+            display: inline-flex;
+            align-items: center;
+
+            a {
+                border-radius: 6px;
+                &:hover {
+                    background-color: #ffffff;
+                }
+            }
+            img {
+                height: 4vw;
+                margin: 1.4vw;
+                
+               &.paypal,
+               &.patreon {
+                filter: invert();
+               }
+            }
+            a:hover {
+                & img {
+                    filter: unset;
+                }
+            }
+        }
+    }
+}
 .project {
     margin: 0 auto;
     width: 90%;
@@ -155,7 +193,7 @@ from {
 }
 to {
   opacity: 1;
-  display: unset;
+  /*display: unset;*/
   /*width: 100%;*/
 }
 }
