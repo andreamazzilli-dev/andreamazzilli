@@ -1,0 +1,54 @@
+        <a href="https://wa.me/393933584120">
+            <span class="label">
+                <i class="bx bxl-whatsapp"></i>
+                <span class="socialName">WhatsApp</span>
+            </span>
+        </a>
+        <a href="https://matrix.to/#/@andrewm:matrix.org">
+            <span class="label">
+                <i class="bx bxl-linkedin"></i>
+                <span class="socialName">Matrix</span>
+            </span>
+            @andrewm:matrix.org
+        </a>
+        <a href="#">
+            <span class="label">
+                <i class="bx bxl-linkedin"></i>
+                <span class="socialName">Signal</span>
+            </span>
+            andreamazzilli
+        </a>
+
+        <span class="label">
+            <i class="fa-brands fa-signal-messenger"></i>
+            Signal:     
+        </span>
+        <a href="">andreamazzilli.87</a><br>
+        <span class="label">
+            <i class="fa-brands fa-matrix"></i>
+            Matrix: 
+        </span>
+        <a href="https://matrix.to/#/@andrewm:matrix.org">@andrewm:matrix.org</a>
+
+
+
+        var hash = window.location.hash.substr(1);
+
+        var result = hash.split('&').reduce(function (res, item) {
+            var parts = item.split('=');
+            res[parts[0]] = parts[1];
+            return res;
+        }, {});
+
+        // other method
+        var myUrl = new URL(window.location.href.replace(/#/g,"?"));
+        var param_value = myUrl.searchParams.get("param_name");
+
+        /// other method
+
+        // to set
+        //window.location.hash = "new value";
+
+        //to get
+        window.addEventListener("hashchange", function () {
+        });
