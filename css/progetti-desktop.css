@@ -1,7 +1,7 @@
 .information {
     margin-left: 10vw;
     margin-right: 10vw;
-    font-size: 1.4vw;
+    font-size: 1.4vw !important;
 
     &.donation {
         margin-top: 18vh;
