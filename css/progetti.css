@@ -10,7 +10,7 @@
     margin-bottom: 25px;
     padding: 15px;
 
-    background-color: #054b62;
+    background-color: var(--main-dimmed-color);
     color: #ffffff;
 
     /* alternative color */
@@ -18,8 +18,8 @@
     color: #000000;
 
     /* another version yet*/
-    background-color: #096888;
-    color:#ffffff;
+    background-color: var(--main-light-color);
+    color:var(--fg-color);
 
     border-radius: 15px;
 

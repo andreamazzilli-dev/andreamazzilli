@@ -92,7 +92,7 @@
             /*padding-bottom: 15px;*/
             height: 50%;
             min-height: 207px;
-            background-color: #cadee5;
+            background-color: var(--fg-color);
             display: flex;
             align-items: center;
             transition: all 1s ease-in-out;
