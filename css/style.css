@@ -57,6 +57,22 @@
         --fg-color-white: #bfbfbf;
         --fg-disabled: #82b1c1;
     }
+
+    div.darkmode {
+        content: "Dark Mode Attiva";
+        position: fixed;
+        background-color: var(--fg-color);
+        bottom: 0px;
+        right: 0px;
+        color: #000000;
+        width: max-content;
+        height: fit-content;
+        padding: 15px;
+        border-radius: 20px;
+        margin: 20px;
+        box-shadow: 2px 3px 7px 1px rgba(0,0,0,0.1);
+        0px 0px 12px 0px rgba(0,0,0,0.5)
+    }
 }
 
 html, body {
