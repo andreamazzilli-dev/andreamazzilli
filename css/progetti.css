@@ -1,0 +1,30 @@
+@import "progetti-mobile.css" screen and (max-width: 768px) and (orientation: portrait);
+@import "progetti-mobile.css" screen and (max-width: 768px) and (orientation: landscape);
+@import "progetti-mobile.css" screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait);
+@import "progetti-desktop.css" screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape);
+@import "progetti-tablet.css" screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape);
+@import "progetti-desktop.css" screen and (min-width: 1024px);
+
+.information {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px;
+
+    background-color: #054b62;
+    color: #ffffff;
+
+    /* alternative color */
+    background-color: #00759c;
+    color: #000000;
+
+    /* another version yet*/
+    background-color: #096888;
+    color:#ffffff;
+
+    border-radius: 15px;
+
+    font-family: "JosefinSans","Raleway";
+
+    font-size: 1.4vw;
+
+  }
