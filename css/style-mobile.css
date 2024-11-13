@@ -83,21 +83,28 @@ header {
   aspect-ratio: 1 / 1;
 }
 
-nav,
-nav > ul > li {
-  padding: 0px;
+
+nav {
   background-color: rgba(0,98,130,0.9) !important;
-  div, hr { display: none;}
-  a {
-    font-family: "Raleway";
-    font-size: 2.5em;
-    font-weight: bold;
-    text-transform: lowercase;
-  }
-  a:hover,
-  a:focus,
-  a:active {
-      background-color: var(--fg-color);
-      color: #006182;
+  ul {
+    margin-top: 0;
+    li {
+      padding: 0px;
+    
+      div, hr { display: none;}
+      a {
+        font-family: "Raleway";
+        font-size: 2.5em;
+        font-weight: bold;
+        text-transform: lowercase;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: var(--fg-color);
+            color: #006182;
+        }
+      }
+    }
+
   }
 }
