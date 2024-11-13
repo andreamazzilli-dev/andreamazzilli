@@ -5,11 +5,11 @@ main {
     height: auto;
 }
 i {
-    /*border: 2px solid #ffffff;*/
+    margin: 2px;
     padding: 1px;
+    /*border: 2px solid #ffffff;*/
     border-radius: 6px;
     line-height: unset !important;
-    margin: 2px;
 }
 .contact {
     margin: 0 auto;

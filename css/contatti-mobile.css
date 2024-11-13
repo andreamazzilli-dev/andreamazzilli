@@ -13,15 +13,10 @@
             content: "";
             flex: 1;
             margin-left: 1rem;
-            margin-top: 1.3rem; /* mobile */
-            margin-top: 2.6vh;
-            margin-top: 7%;
-            height: 3px;
-            background-color: var(--fg-color);
-            padding-right: 30px;
-
-            height: 1px;
             margin-top: unset;
+            padding-right: 30px;
+            height: 1px;
+            background-color: var(--fg-color);
             display: flex;
             align-self: center;
         }
@@ -59,15 +54,12 @@
                     }
                 }
                 span.label {
-                    display: block;
-                    text-align: left;
-                    font-family: "Raleway";
-                    font-weight: 500;
-
                     display: flex block;
                     align-items: center;
-                    text-align: ;
                     justify-content: left;
+                    font-family: "Raleway";
+                    font-weight: 500;
+                    text-align: left;
                 }
             }
         }
@@ -117,28 +109,21 @@
             list-style: none;
 
             li {
-                width: 44vw;
-                width: 50%;
-                width: 70%;
                 width: 90%;
                 display: flex inline;
                 flex-direction: column;
-                /*border: 1px solid #ffffff;*/
                 background-color: transparent;
 
                 a {
                     margin: 5px;
-                    padding: 2vw;
+                    padding: 4vw;                    
+                    border-radius: 15px;
+
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    justify-content: space-evenly;
-                    border-radius: 15px;
-                    font-size: 3.5vw;
-                    font-size: 4.5vw;
-
-                    padding: 4vw;
                     justify-content: space-between;
+
                     font-size: 6.5vw;
                     font-weight: 400;
                     
@@ -156,11 +141,11 @@
                     }
 
                     span {
+                        min-width: unset;
+                        width: fit-content;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        min-width: unset;
-                        width: fit-content;
                         border-radius: 15px;
                         background-color: transparent;
                         &.socialName {
@@ -170,7 +155,6 @@
                             display: none;
                         }
                         i {
-                            font-size: 6em;
                             font-size: 10vw;
                         }
                         img {
