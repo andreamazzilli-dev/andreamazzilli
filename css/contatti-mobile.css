@@ -63,6 +63,11 @@
                     text-align: left;
                     font-family: "Raleway";
                     font-weight: 500;
+
+                    display: flex block;
+                    align-items: center;
+                    text-align: ;
+                    justify-content: left;
                 }
             }
         }
@@ -167,6 +172,9 @@
                         i {
                             font-size: 6em;
                             font-size: 10vw;
+                        }
+                        img {
+                            display: none;
                         }
                     }
                 }

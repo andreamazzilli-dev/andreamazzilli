@@ -40,7 +40,7 @@
                     align-items: center;
                     background-color: var(--main-dimmed-color);
                     border-radius: 15px;
-                    line-height: 2vw;
+                    line-height: 1.8vw;
 
                     a {
                         padding: 3px;
@@ -49,7 +49,7 @@
                         color: var(--fg-color);
                         /*border-bottom: 1px dotted #FFFFFF;*/
                         border-radius: 0px;
-                        font-size: 2vw;
+                        font-size: 1.8vw;
                         &:hover {
                             padding: 18px;
                             /*border-bottom-style: solid;*/
@@ -66,6 +66,12 @@
                         justify-content: space-between;
                         background-color: var(--main-light-color);
                         border-radius: 15px 0 0 15px;
+
+                        font-family: "JosefinSans";
+                        text-transform: lowercase;
+                        font-weight: 400;
+                        align-items: center;
+                        flex-wrap: wrap;
                     }
                 }
             }
@@ -76,6 +82,7 @@
             text-align: center;
             a {
                 margin: 5px;
+                margin-top: 5vw;
                 padding: 15px;
 
                 height: fit-content;
