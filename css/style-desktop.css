@@ -74,6 +74,13 @@ nav > ul > li {
     text-decoration: underline;
     text-underline-offset: 10px;
   }
+  a.disabled {
+    color: var(--fg-disabled);
+    &:hover {
+      cursor: default;
+      text-decoration: none;
+    }
+  }
 }
 
 

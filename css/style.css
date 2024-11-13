@@ -43,6 +43,7 @@
     --main-lighten-color: #09769b;
     --fg-color: #cadee5;
     --fg-color-white: #ffffff;
+    --fg-disabled: #82b1c1;
 }
 
 html, body {
