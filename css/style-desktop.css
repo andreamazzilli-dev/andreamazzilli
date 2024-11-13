@@ -2,18 +2,17 @@
 
 
 header {
-  display: flex;
   margin: 4vh auto !important;
   padding-left: 6vw;
   padding-right: 6vw;
+  display: flex;
   text-align: center;
-  /*border: 1px solid red;*/
 }
 
 .logoGroup {
-  display: flex;
   padding: 15px;
   width: 40vw;
+  display: flex;
   font-family: "Comfortaa";
   font-size: 1vw;
   .logoTextLabel {
@@ -63,16 +62,15 @@ nav > ul > li {
     margin: 0;
     margin-left: -40px;
   }
-  hr { display: none;}
   a {
     font-family: "JosefinSans","Raleway";
     font-size: 2.5em;
     font-weight: 200;
     text-transform: lowercase;
-  }
-  a:hover {
-    text-decoration: underline;
-    text-underline-offset: 10px;
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 10px;
+    }
   }
   a.disabled {
     color: var(--fg-disabled);
@@ -82,7 +80,6 @@ nav > ul > li {
     }
   }
 }
-
 
 main {
   height: 82vh;
