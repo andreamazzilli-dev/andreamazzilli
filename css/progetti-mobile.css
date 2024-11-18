@@ -149,6 +149,31 @@
     animation-fill-mode: forwards;
 }
 
+@media (prefers-reduced-motion) {
+    .project {
+        opacity: 1;
+        .card {
+            transition: none;
+            &:hover,
+            .cardSelected {
+                /*transform: none;*/
+                transition: none;
+            }
+            &:hover a.cardLink {
+                transition: none;
+            }
+            &.hover a.cardLink:hover {
+                transition: none;
+            }
+            .preview {
+                transition: none;
+            }
+            &:hover a {
+                transition: none;
+            }
+        }
+    }
+}
 
 @keyframes fadeIn {
     from {

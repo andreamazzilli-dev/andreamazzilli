@@ -170,4 +170,15 @@
             }
         }
     }
+
+    @media (prefers-reduced-motion) {
+        .contact {
+            a {
+                transition: none;
+                &:hover {
+                    transition: none !important;
+                }
+            }
+        }
+    }
 }
