@@ -63,6 +63,7 @@ nav > ul > li {
     margin-left: -40px;
   }
   a {
+    color: var(--fg-color);
     font-family: "JosefinSans","Raleway";
     font-size: 2.5em;
     font-weight: 200;
