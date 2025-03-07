@@ -4,6 +4,7 @@ header {
   padding-right: 2vw;;
   text-align: center;
   /*border: 1px solid red;*/
+  align-items: center;
 }
 .logoGroup {
     display: flex;
@@ -11,38 +12,38 @@ header {
     width: 96%;
     flex: 1;
     font-family: "Comfortaa";
-    font-size: 100%;
+    font-size: 2vw;
     text-align: center;
     position: relative;
+    align-items: center;
+
     .logoTextLabel {
       padding: 5px;
       border-radius: 10px;
-      background-color: #cadee5;
-      background-color: #ffffff;
+      background-color: var(--fg-color);
       color: #006182 !important;
       /* to show on drawer */
       z-index: 101;
     }
     .logoText {
       display: unset;
-      color: #cadee5;
+      color: var(--fg-color);
       font-size: 3em;
       font-weight: 500;
     }
     .logoSeparator {
       display: none;
       padding: 5px;
-      color: #cadee5;
+      color: var(--fg-color);
       font-size: 3em;
       font-weight: 500;
     }
     .logoHomeText {
-      padding: 5px;
-      padding-left: 0;
+      /*padding: 5px;
+      padding-left: 0;*/
       flex-grow: 3;
       align-content: center;
-      color: #cadee5;
-      color: #ffffff;
+      color: var(--fg-color);
       /*font-size: 2em;*/
       font-size: 3em;
       font-weight: 500;
@@ -63,9 +64,10 @@ header {
   display: block !important;
   position: static;
   align-content: center;
-  padding: 12px;
-  color: #ffffff;
+  padding: 10px;
+  color: var(--fg-color);
   font-size: 2.5em;
+  font-size: 8vw;
   /*border: 1px solid green;*/
 }
 #nav-ics {
@@ -81,21 +83,28 @@ header {
   aspect-ratio: 1 / 1;
 }
 
-nav,
-nav > ul > li {
-  padding: 0px;
+
+nav {
   background-color: rgba(0,98,130,0.9) !important;
-  ul, hr { display: none;}
-  a {
-    font-family: "Raleway";
-    font-size: 2.5em;
-    font-weight: bold;
-    text-transform: lowercase;
-  }
-  a:hover,
-  a:focus,
-  a:active {
-      background-color: #cadee5;
-      color: #006182;
+  ul {
+    margin-top: 0;
+    li {
+      padding: 0px;
+    
+      div, hr { display: none;}
+      a {
+        font-family: "Raleway";
+        font-size: 2.5em;
+        font-weight: bold;
+        text-transform: lowercase;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: var(--fg-color);
+            color: #006182;
+        }
+      }
+    }
+
   }
 }

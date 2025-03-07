@@ -1,0 +1,19 @@
+main {
+    padding: 6vw;
+    padding-top: 2vh;
+    min-height: 62vh;
+    height: auto;
+}
+i {
+    margin: 2px;
+    padding: 1px;
+    /*border: 2px solid #ffffff;*/
+    border-radius: 6px;
+    line-height: unset !important;
+}
+.contact {
+    margin: 0 auto;
+    font-family: 'Raleway';
+    font-family: 'JosefinSans';
+    color: var(--fg-color);
+}

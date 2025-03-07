@@ -1,0 +1,179 @@
+.contact {
+    font-size: 5vw;    
+    text-align: center;
+    line-height: 12vw;
+    /*transition: 1s linear all;*/
+
+    h4 {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        display: flex;
+
+        &::after {
+            content: "";
+            flex: 1;
+            margin-left: 1rem;
+            margin-top: unset;
+            padding-right: 30px;
+            height: 1px;
+            background-color: var(--fg-color);
+            display: flex;
+            align-self: center;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 600;
+        /* for mobile */
+        background-color: var(--main-light-color);
+        border-radius: 10px;
+        color: var(--fg-color);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    section#contactMain {
+
+        ul {
+            margin-left: -40px;
+            list-style: none;
+            li {
+                a {
+                    padding: 15px;
+                    font-size: 6vw;
+                    &:hover {
+                        background-color: var(--main-lighten-color);
+                        transition: 1s linear all;
+                        text-decoration: none;
+                    }
+                    &:focus {
+                        background-color: var(--main-dimmed-color);
+                        transition: 1s linear all;
+                    }
+                }
+                span.label {
+                    display: flex block;
+                    align-items: center;
+                    justify-content: left;
+                    font-family: "Raleway";
+                    font-weight: 500;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    section#contactIM {
+
+        a {
+            margin: 5px;
+            padding: 15px;
+
+            height: fit-content;
+            display: inline-flex;
+
+            text-decoration: none;
+            
+            &:hover {
+                background-color: var(--main-lighten-color);
+                transition: 1s linear all;
+            }
+            &:focus,
+            &:active {
+                background-color: var(--main-dimmed-color);
+                transition: 1s linear all;
+            }
+
+            img {
+                width: 10vw;
+                padding: 5px;
+                filter: invert(100%) opacity(80%);
+                &:hover {
+                    transition: 1s linear all;
+                    filter: invert(100%) opacity(1);
+                }
+            }
+        }
+    }
+
+    section#contactSocial {
+
+        ul {
+            margin-left: -40px;
+            width: 100%;
+            display: flex inline;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            list-style: none;
+
+            li {
+                width: 90%;
+                display: flex inline;
+                flex-direction: column;
+                background-color: transparent;
+
+                a {
+                    margin: 5px;
+                    padding: 4vw;                    
+                    border-radius: 15px;
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    font-size: 6.5vw;
+                    font-weight: 400;
+                    
+                    &:hover {
+                        background: #054b62;
+                        background-color: var(--main-light-color);
+                        transition: 0.5s linear all;
+                        text-decoration: none;
+                    }
+                    &:focus,
+                    &:active {
+                        background: var(--main-dimmed-color);
+                        transition: 0.5s linear all;
+                        text-decoration: none;
+                    }
+
+                    span {
+                        min-width: unset;
+                        width: fit-content;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        border-radius: 15px;
+                        background-color: transparent;
+                        &.socialName {
+                            display: none;
+                        }
+                        &.url {
+                            display: none;
+                        }
+                        i {
+                            font-size: 10vw;
+                        }
+                        img {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .contact {
+        a {
+            transition: none;
+            &:hover {
+                transition: none !important;
+            }
+        }
+    }
+}

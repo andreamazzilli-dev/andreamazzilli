@@ -2,35 +2,34 @@
 
 
 header {
-  display: flex;
   margin: 4vh auto !important;
   padding-left: 6vw;
   padding-right: 6vw;
+  display: flex;
   text-align: center;
-  /*border: 1px solid red;*/
 }
 
 .logoGroup {
-  display: flex;
   padding: 15px;
   width: 40vw;
+  display: flex;
   font-family: "Comfortaa";
   font-size: 1vw;
   .logoTextLabel {
     padding: 5px;
     border-radius: 10px;
-    background-color: #cadee5;
+    background-color: var(--fg-color);
     color: #006182 !important;
     align-content: center;
   }
   .logoText {
-    color: #cadee5;
+    color: var(--fg-color);
     font-size: 3em;
     font-weight: 500;
   }
   .logoSeparator {
     padding: 5px;
-    color: #cadee5;
+    color: var(--fg-color);
     font-size: 3em;
     font-weight: 500;
     align-content: center;
@@ -38,7 +37,7 @@ header {
   .logoHomeText {
     padding: 5px;
     padding-left: 0;
-    color: #cadee5;
+    color: var(--fg-color);
     font-size: 3em;
     font-weight: 500;
   }
@@ -62,21 +61,26 @@ nav > ul > li {
   ul {
     margin: 0;
     margin-left: -40px;
-    display: none;
   }
-  hr { display: none;}
   a {
+    color: var(--fg-color);
     font-family: "JosefinSans","Raleway";
     font-size: 2.5em;
     font-weight: 200;
     text-transform: lowercase;
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 10px;
+    }
   }
-  a:hover {
-    text-decoration: underline;
-    text-underline-offset: 10px;
+  a.disabled {
+    color: var(--fg-disabled);
+    &:hover {
+      cursor: default;
+      text-decoration: none;
+    }
   }
 }
-
 
 main {
   height: 82vh;

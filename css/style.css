@@ -21,8 +21,6 @@
 /* 1281 - 1440 / Large desktop */
 /* 1441+ /  Extra large desktop */
 
-
-
 @font-face {
     font-family: "Comfortaa";
     src: url("../fonts/Comfortaa.ttf");
@@ -36,18 +34,47 @@
     src: url("../fonts/JosefinSans.ttf");
 }
 
+:root {
+    --main-color: #006182;
+    --main-dimmed-color: #054b62;
+    --main-light-color: #096888;
+    --main-lighten-color: #09769b;
+    --fg-color: #cadee5;
+    --fg-color-white: #ffffff;
+    --fg-disabled: #82b1c1;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --main-color: #006182;
+        --main-color: darkslategrey;
+        --main-color: #151515;
+        --main-dimmed-color: #054b62;
+        --main-light-color: #096888;
+        --main-lighten-color: #09769b;
+        --fg-color: #cadee5;
+        --fg-color-white: #ffffff;
+        --fg-color-white: #bfbfbf;
+        --fg-disabled: #82b1c1;
+    }
+}
+
 html, body {
     margin: 0;
 }
 
 body {
-    background-color: #006182;
+
+    background-color: var(--main-color);
     font-family: sans-serif;
     font-weight: 300;
 }
 
 header {
     
+}
+:focus-visible {
+    outline: 2px solid var(--fg-color);
 }
 
 
