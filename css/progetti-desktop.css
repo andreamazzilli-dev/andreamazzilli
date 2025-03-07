@@ -24,7 +24,8 @@
                 margin: 1.4vw;
                 
                &.paypal,
-               &.patreon {
+               &.patreon,
+               &.liberapay {
                 filter: invert();
                }
             }
