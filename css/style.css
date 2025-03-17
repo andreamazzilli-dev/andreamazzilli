@@ -48,14 +48,59 @@
     :root {
         --main-color: #006182;
         --main-color: darkslategrey;
+        --main-light-color: #006182;
         --main-color: #151515;
         --main-dimmed-color: #054b62;
         --main-light-color: #096888;
         --main-lighten-color: #09769b;
         --fg-color: #cadee5;
+        /*--fg-color: #09769b;*/
         --fg-color-white: #ffffff;
         --fg-color-white: #bfbfbf;
         --fg-disabled: #82b1c1;
+    }
+    .logoGroup {
+        .logoTextLabel {
+            background-color: var(--main-light-color);
+            color: var(--fg-color-white) !important;
+        }
+        .logoText,
+        .logoSeparator,
+        .logoHomeText {
+            color: var(--main-light-color);
+            color: var(--fg-color);
+            font-weight: 900;
+        }
+    }
+    nav,
+    nav > ul > li {
+        a {
+            color: var(--main-lighten-color);
+            color: var(--fg-color);
+        }
+    }
+    .information {
+        background-color: var(--main-dimmed-color) !important;
+    }
+    .project {
+        .card {
+            &:hover,
+            .cardSelected {
+                background-color: var(--main-lighten-color) !important;
+            }
+            .preview {
+                background-color: var(--main-dimmed-color) !important;
+                border-radius: 15px;
+            }
+        }
+    }
+    .contact {
+        & h4 {
+            color: var(--main-lighten-color);
+            &::after {
+                background-color: var(--main-lighten-color) !important;
+            }
+        }
     }
 }
 
