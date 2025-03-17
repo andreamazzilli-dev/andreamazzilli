@@ -6,7 +6,12 @@ header {
   /*border: 1px solid red;*/
   align-items: center;
 }
-.logoGroup {
+a.logoLink {
+  display: flex;
+  flex: 1;
+  width: 96%;
+  text-decoration: none;
+  .logoGroup {
     display: flex;
     padding: 15px;
     width: 96%;
@@ -16,7 +21,7 @@ header {
     text-align: center;
     position: relative;
     align-items: center;
-
+    
     .logoTextLabel {
       padding: 5px;
       border-radius: 10px;
@@ -48,9 +53,10 @@ header {
       font-size: 3em;
       font-weight: 500;
     }
+  }
 }
-
-.spacer {
+  
+  .spacer {
   display: none;
 }
 

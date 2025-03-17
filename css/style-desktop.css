@@ -10,39 +10,41 @@ header {
 }
 
 a.logoLink {
-  text-decoration: none;
-}
-.logoGroup {
-  padding: 15px;
-  width: 40vw;
   display: flex;
-  font-family: "Comfortaa";
-  font-size: 1vw;
-  .logoTextLabel {
-    padding: 5px;
-    border-radius: 10px;
-    background-color: var(--fg-color);
-    color: #006182 !important;
-    align-content: center;
-  }
-  .logoText {
-    color: var(--fg-color);
-    font-size: 3em;
-    font-weight: 500;
-  }
-  .logoSeparator {
-    padding: 5px;
-    color: var(--fg-color);
-    font-size: 3em;
-    font-weight: 500;
-    align-content: center;
-  }
-  .logoHomeText {
-    padding: 5px;
-    padding-left: 0;
-    color: var(--fg-color);
-    font-size: 3em;
-    font-weight: 500;
+  text-decoration: none;
+
+    .logoGroup {
+      padding: 15px;
+      /*width: 40vw;*/
+      display: flex;
+      font-family: "Comfortaa";
+      font-size: 1vw;
+      .logoTextLabel {
+        padding: 5px;
+        border-radius: 10px;
+        background-color: var(--fg-color);
+        color: #006182 !important;
+        align-content: center;
+      }
+      .logoText {
+        color: var(--fg-color);
+      font-size: 3em;
+      font-weight: 500;
+    }
+    .logoSeparator {
+      padding: 5px;
+      color: var(--fg-color);
+      font-size: 3em;
+      font-weight: 500;
+      align-content: center;
+    }
+    .logoHomeText {
+      padding: 5px;
+      padding-left: 0;
+      color: var(--fg-color);
+      font-size: 3em;
+      font-weight: 500;
+    }
   }
 }
 
