@@ -9,6 +9,9 @@ header {
   text-align: center;
 }
 
+a.logoLink {
+  text-decoration: none;
+}
 .logoGroup {
   padding: 15px;
   width: 40vw;
