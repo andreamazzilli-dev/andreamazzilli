@@ -108,3 +108,20 @@ nav {
 
   }
 }
+
+@media screen and (prefers-color-scheme: dark){
+  @media screen and (max-width: 1024px) and (orientation: portrait) {
+    nav {
+      & ul {
+        & li {
+          & a {
+            &:hover, &:focus, &:active {
+              background-color: var(--main-dimmed-color);
+              color: var(--fg-disabled);
+            }
+          }
+        }
+      }
+    }
+  }
+}

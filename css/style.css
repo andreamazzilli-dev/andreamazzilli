@@ -68,6 +68,7 @@
         .logoSeparator,
         .logoHomeText {
             color: var(--main-light-color);
+            color: var(--fg-color);
             font-weight: 900;
         }
     }
@@ -75,7 +76,7 @@
     nav > ul > li {
         a {
             color: var(--main-lighten-color);
-            font-weight: 300;
+            color: var(--fg-color);
         }
     }
     .information {
@@ -89,6 +90,7 @@
             }
             .preview {
                 background-color: var(--main-dimmed-color) !important;
+                border-radius: 15px;
             }
         }
     }
