@@ -106,6 +106,7 @@
 
 html, body {
     margin: 0;
+    scroll-padding-top: 4rem;
 }
 
 body {
