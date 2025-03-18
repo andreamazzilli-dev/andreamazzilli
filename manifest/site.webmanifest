@@ -1,0 +1,34 @@
+{
+    "short_name": "andreamazzilli.dev",
+    "name": "Andrea Mazzilli",
+    "icons": [
+      {
+        "src": "../img/icon/192x192_rounded_safe.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "../img/icon/512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "id": "https://andreamazzilli.dev",
+    "start_url": "https://andreamazzilli.dev/",
+    "background_color": "#006182",
+    "theme_color": "#006182",
+    "display_override": ["standalone","window-control-overlay", "minimal-ui"],
+    "display": "standalone",
+    "scope": "/#",
+    "shortcuts": [
+      {
+        "name": "Contatti",
+        "short_name": "Contatti",
+        "description": "Modi in cui pui contattari",
+        "url": "https://andreamazzilli.dev/#contatti",
+        "icons": [{ "src": "../img/icons/mail_192.png", "sizes": "192x192" }]
+      }
+    ],
+    "description": "Andrea Mazzilli"
+  }
+  
