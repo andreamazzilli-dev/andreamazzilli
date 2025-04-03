@@ -2,6 +2,15 @@ version: '3.8'
 name: andreamazzilli
 services: 
   andreamazzilli:
+    image: php:8.3
+    ports:
+      - 8001:80
+
+    volumes:
+      - ..:/var/www/html/andreamazzilli:cached
+      - ../../cassetto/cassetto:/var/www/html/andreamazzilli/cassetto:cached
+
+  andreamazzilli-build:
     build:
       context: .
       dockerfile: Dockerfile
@@ -14,7 +23,7 @@ services:
   #      NODE_VERSION: "lts/*"
 
     ports:
-      - 8000:80
+      - 8001:80
 
     volumes:
       - ..:/workspace:cached
