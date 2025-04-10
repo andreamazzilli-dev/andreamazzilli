@@ -83,20 +83,6 @@
 
     <script>
 
-        function updateText() {
-            const viewportWidth = window.visualViewport.width;
-            const viewportHeight = window.visualViewport.height;
-            const viewportOrientation = window.viewportOrientation;
-///            document.getElementById('main').innerHTML("<br>");
-            document.getElementById('main').replaceChildren('width: '+viewportWidth+' | ');
-            document.getElementById('main').append('height: '+viewportHeight+' | ');
-            document.getElementById('main').append('orientation: '+viewportOrientation);
-        }
-        //document.addEventListener('click', updateText );
-        //document.addEventListener('resize', updateText );
-
-        //window.onresize = updateText;
-
         var hash = window.location.hash.substr(1);
 
         window.addEventListener('load', function() {
@@ -106,8 +92,7 @@
                 getData(home);
             }
         });
-
-
+ 
     </script>
 
     <script src='dnaver/js/dnaver.js'></script>
