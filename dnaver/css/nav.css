@@ -1,0 +1,63 @@
+/* 320 - 480 Portrait */
+/* 481 -600 Landscape */
+/* 681 - 768 Portrait */
+@import "../css/nav-drawer.css" screen and (max-width: 768px) and (orientation: portrait);
+
+@import "../css/nav-drawer.css" screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait);
+
+
+/* 769 - 1024 Landscape */
+@import "../css/nav-drawer.css" screen and (max-width: 1023px) and (orientation: landscape);
+@import "../css/nav-drawer.css" screen and (min-width: 1024px) and (orientation: portrait);
+
+@import "../css/nav-wide.css" screen and (min-width: 769px) and (orientation: landscape);
+@import "../css/nav-wide-style.css" screen and (min-width: 769px) and (orientation: landscape);
+/* @import "../css/nav-wide-secondary.css" screen and (min-width: 768px); */
+
+
+
+/* 1025 - 1280 / Laptop and Small Desktop */
+
+/* 1281 - 1440 / Large desktop */
+/* 1441+ /  Extra large desktop */
+
+/* @import "../css/nav-wide-secondary.css" screen and (min-width: 768px); */
+
+
+/*
+@import url("../css/nav-bottom.css") screen and (orientation: portrait);
+*/
+
+/*
+@import url("../css/nav-drawer.css") screen and (max-width:768px);
+*/
+
+/*
+@import url("../css/nav-wide.css") screen and (min-width:768px);
+*/
+
+
+/* mobile */
+/*
+@import "../css/nav-bottom.css" screen and (orientation: portrait);
+@import "../css/nav-secondary.css" screen and (orientation: portrait);
+*/
+
+/* mobile - side drawer */
+
+
+
+/* desktop */
+
+
+
+/* tablet - ipad */
+
+
+header {
+
+}
+
+nav {
+    border: 0;
+}
