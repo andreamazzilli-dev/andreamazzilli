@@ -8,7 +8,7 @@
     <meta http-equiv="Expires" content="0">
     <title>Andrea Mazzilli</title>
 
-    <link rel="stylesheet" href="cassetto/css/nav.css">
+    <link rel="stylesheet" href="dnaver/css/nav.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" >
 
@@ -33,7 +33,7 @@
     
     <header>
         
-        <a href="https://andreamazzilli.dev" class="logoLink">
+        <a href="#home" onclick="getData('home')" class="logoLink">
             <div class="logoGroup">
                 <!-- <img src="img/logo.png" class="logo" alt="">-->
                 <span class="logoText logoTextLabel">am</span>
@@ -57,16 +57,10 @@
             </a>
             <ul>
                 <li>
-                    <a href="#" onclick="javascript:getData('home')" name="home" id="home" stylex="display: none;">Home</a>
-                </li>
-                <li>
                     <a href="#portfolio" onclick="javascript:getData('portfolio')" name="portfolio" id="portfolio">Portfolio</a>
                 </li>
                 <li>
                     <a href="#progetti" onclick="javascript:getData('progetti')" name="progetti" id="progetti">Progetti</a>
-                </li>
-                <li>
-                    <a href="#support" onclick="javascript:getData('support')" name="support" id="support">Supportami</a>
                 </li>
                 <li>
                     <a href="#contatti" onclick="javascript:getData('contatti')" name="contatti" id="contatti">Contatti</a>
@@ -83,25 +77,20 @@
 
     </main>
 
+    <footer>
+        <div>
+            P. IVA: 00000000
+        </div>
+        <div>
+            Made using Open Source with &#9829;
+        </div>
+    </footer>
+
     <div class="previewLabel">
         Anteprima
     </div>
 
     <script>
-
-        function updateText() {
-            const viewportWidth = window.visualViewport.width;
-            const viewportHeight = window.visualViewport.height;
-            const viewportOrientation = window.viewportOrientation;
-///            document.getElementById('main').innerHTML("<br>");
-            document.getElementById('main').replaceChildren('width: '+viewportWidth+' | ');
-            document.getElementById('main').append('height: '+viewportHeight+' | ');
-            document.getElementById('main').append('orientation: '+viewportOrientation);
-        }
-        //document.addEventListener('click', updateText );
-        //document.addEventListener('resize', updateText );
-
-        //window.onresize = updateText;
 
         var hash = window.location.hash.substr(1);
 
@@ -109,14 +98,12 @@
             if (hash != '') {
                 getData(hash);
             } else {
-                getData(home);
+                getData('home');
             }
         });
-
-
+ 
     </script>
 
-    <script src='cassetto/js/nav.js'></script>
-    <script src="cassetto/js/touch-event-simple.js"></script>
+    <script src='dnaver/js/dnaver.js'></script>
 </body>
 </html>

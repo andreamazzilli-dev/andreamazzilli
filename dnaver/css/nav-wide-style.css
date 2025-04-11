@@ -1,0 +1,20 @@
+header {
+    text-align: left;
+}
+nav {
+    padding: 10px;
+}
+
+nav > ul > li > a,
+nav > a {
+    padding: 10px;
+    /*color: #FFFFFF;*/
+    font-family: "Cantarell";
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav > ul > li > a:hover,
+nav > a:hover {
+    /*background-color: darkslategray;*/
+    /*color: #FFFFFF;*/
+}

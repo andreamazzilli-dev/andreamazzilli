@@ -1,0 +1,42 @@
+header {
+
+  /*height: 76px;*/
+}
+
+nav {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    text-align: right;
+}
+
+nav > ul {
+
+}
+
+nav > ul.nav-secondary {
+    display: none;
+}
+nav > ul > li {
+    display: inline;
+}
+
+nav > ul > li > a {
+
+}
+nav > ul > li > a:hover {
+    
+}
+
+nav img {
+    display: none;
+}
+
+.open,
+.close,
+.openBtn,
+.closeBtn {
+    display: none;
+}
