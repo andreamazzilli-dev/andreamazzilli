@@ -33,7 +33,7 @@
     
     <header>
         
-        <a href="https://andreamazzilli.dev" class="logoLink">
+        <a href="#home" onclick="getData('home')" class="logoLink">
             <div class="logoGroup">
                 <!-- <img src="img/logo.png" class="logo" alt="">-->
                 <span class="logoText logoTextLabel">am</span>
@@ -77,6 +77,15 @@
 
     </main>
 
+    <footer>
+        <div>
+            P. IVA: 00000000
+        </div>
+        <div>
+            Made using Open Source with &#9829;
+        </div>
+    </footer>
+
     <div class="previewLabel">
         Anteprima
     </div>
@@ -89,7 +98,7 @@
             if (hash != '') {
                 getData(hash);
             } else {
-                getData(home);
+                getData('home');
             }
         });
  
