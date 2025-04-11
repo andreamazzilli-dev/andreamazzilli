@@ -1,33 +1,35 @@
-main {
-    align-content: end;
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    main {
+        align-content: end;
 
-    & div#home {
-        display: flex;
-        flex-direction: column;
-        vertical-align: bottom;
-        width: 90%;
-        margin: auto;
-        padding-left: 6vw;
-        padding-right: 6vw;
+        & div#home {
+            display: flex;
+            flex-direction: column;
+            vertical-align: bottom;
+            width: 90%;
+            margin: auto;
+            padding-left: 6vw;
+            padding-right: 6vw;
 
-      span {
-            color: var(--fg-color-white);
-            font-family: 'Raleway';
-            font-size: 4vw;
-            display: block;
-            
-        }
-        span:nth-child(1) {
-            /*color: red;*/
-            font-weight: 200;
-        }
-        span:nth-child(2) {
-            /*color: blue;*/
-            font-weight: 400;
-        }
-        span:nth-child(3) {
-            /*color:green;*/
-            font-weight: 700;
+        span {
+                color: var(--fg-color-white);
+                font-family: 'Raleway';
+                font-size: 4vw;
+                display: block;
+                
+            }
+            span:nth-child(1) {
+                /*color: red;*/
+                font-weight: 200;
+            }
+            span:nth-child(2) {
+                /*color: blue;*/
+                font-weight: 400;
+            }
+            span:nth-child(3) {
+                /*color:green;*/
+                font-weight: 700;
+            }
         }
     }
 }
