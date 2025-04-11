@@ -115,6 +115,33 @@ nav {
   }
 }
 
+footer {
+  margin: 4vh auto !important;
+  width: 90%;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  display: flex;
+  color: var(--fg-color);
+  font-size: 3vw;
+  div {
+    flex-grow: 1;
+    padding: 4px;
+    /*border: 1px solid yellow;*/
+    border-top: 1px solid var(--fg-color);
+
+    &:nth-child(1) {
+      text-align: left;
+      /*border: 1px solid green;  */
+
+    }
+    &:nth-child(2) {
+      text-align: right;
+      /*border: 1px solid red;*/
+    }
+  }
+
+}
+
 @media screen and (prefers-color-scheme: dark){
   @media screen and (max-width: 1024px) and (orientation: portrait) {
     nav {
